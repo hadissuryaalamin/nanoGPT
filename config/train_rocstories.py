@@ -19,20 +19,20 @@ dataset = 'rocstories'
 # effective tokens/iter = grad_accum * batch * block
 # 8 * 8 * 512 = 32,768 tokens/iter on single GPU
 gradient_accumulation_steps = 8
-batch_size = 8
-block_size = 512
+batch_size = 16
+block_size = 1024
 
 # model size: balanced baseline for 8-16GB GPUs
-n_layer = 8
-n_head = 8
-n_embd = 512
-dropout = 0.1
+n_layer = 12
+n_head = 12
+n_embd = 768
+dropout = 0.15
 bias = False
 
-learning_rate = 6e-4
-max_iters = 10000
-lr_decay_iters = 10000
-min_lr = 6e-5
+learning_rate = 3e-5
+max_iters = 7000
+lr_decay_iters = 7000
+min_lr = 6e-6
 warmup_iters = 1000
 
 weight_decay = 1e-1

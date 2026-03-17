@@ -81,6 +81,16 @@ def tokenize_split(split, encoder):
 dataset = load_dataset("mintujupally/ROCStories")
 train_split, val_split = pick_train_val_splits(dataset)
 
+# Save raw stories from val_split to val_raw.txt
+base_dir = os.path.dirname(__file__)
+val_raw_path = os.path.join(base_dir, 'val_raw.txt')
+with open(val_raw_path, 'w', encoding='utf-8') as f:
+	for example in val_split:
+		text = story_text(example)
+		if text:
+			f.write(text + '\n')
+print(f"Raw validation stories saved to {val_raw_path}")
+
 enc = tiktoken.get_encoding("gpt2")
 train_ids = tokenize_split(train_split, enc)
 val_ids = tokenize_split(val_split, enc)
