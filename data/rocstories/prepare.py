@@ -2,104 +2,146 @@
 
 Preprocessing summary:
 - Source data: Hugging Face dataset ``mintujupally/ROCStories``.
-- Story text construction: prefers ``story``; otherwise joins
-	``sentence1``..``sentence5`` with spaces; falls back to ``text``.
-- Tokenization: GPT-2 BPE via ``tiktoken`` using ``encode_ordinary``.
-	This intentionally avoids adding any extra special tokens during encoding.
-- Story separator: appends one GPT-2 end-of-text token (``<|endoftext|>``)
-	after every non-empty story.
-- Concatenation strategy: all stories in a split are flattened into one long
-	1D token sequence, then saved as ``uint16`` to ``train.bin``/``val.bin``.
 
-Resulting binaries are directly consumable by the training loader, which reads
-fixed-length windows from these contiguous token streams.
+Split strategy:
+    ROCStories original splits
+    ├── train (98k stories)
+    │   ├── train.bin  ← 90%  fed to the model during training
+    │   └── val.bin    ← 10%  monitors loss / detects overfitting
+    └── test  (3.7k stories)
+        └── test.bin   ← final held-out benchmark; touch only after training
+
+- Story text construction: prefers ``story``; otherwise joins
+    ``sentence1``..``sentence5`` with spaces; falls back to ``text``.
+- Tokenization: GPT-2 BPE via ``tiktoken`` using ``encode_ordinary``.
+    This intentionally avoids adding any extra special tokens during encoding.
+- Story separator: appends one GPT-2 end-of-text token (``<|endoftext|>``)
+    after every non-empty story.
+- Concatenation strategy: all stories in a split are flattened into one long
+    1D token sequence, then saved as ``uint16``.
 """
 
 import os
 import tiktoken
 import numpy as np
 from datasets import load_dataset
+import pickle
 
 
-def story_text(example):
-	"""Build a single story string from common ROCStories field layouts.
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
 
-	Order of precedence:
-	1. ``story``
-	2. ``sentence1``..``sentence5`` joined with spaces
-	3. ``text``
-	"""
-	if "story" in example and example["story"]:
-		return str(example["story"]).strip()
+def story_text(example: dict) -> str:
+    """Build a single story string from common ROCStories field layouts.
 
-	sentence_keys = [
-		key
-		for key in ("sentence1", "sentence2", "sentence3", "sentence4", "sentence5")
-		if key in example and example[key]
-	]
-	if sentence_keys:
-		return " ".join(str(example[key]).strip() for key in sentence_keys).strip()
+    Order of precedence:
+    1. ``story``
+    2. ``sentence1``..``sentence5`` joined with spaces
+    3. ``text``
+    """
+    if "story" in example and example["story"]:
+        return str(example["story"]).strip()
 
-	if "text" in example and example["text"]:
-		return str(example["text"]).strip()
+    sentence_keys = [
+        key
+        for key in ("sentence1", "sentence2", "sentence3", "sentence4", "sentence5")
+        if key in example and example[key]
+    ]
+    if sentence_keys:
+        return " ".join(str(example[key]).strip() for key in sentence_keys).strip()
 
-	return ""
+    if "text" in example and example["text"]:
+        return str(example["text"]).strip()
 
-
-def pick_train_val_splits(dataset):
-	"""Pick train/val robustly across dataset variants."""
-	if "train" in dataset and "validation" in dataset:
-		return dataset["train"], dataset["validation"]
-	if "train" in dataset and "test" in dataset:
-		return dataset["train"], dataset["test"]
-	if "train" in dataset:
-		split = dataset["train"].train_test_split(test_size=0.1, seed=1337, shuffle=True)
-		return split["train"], split["test"]
-
-	first_split_name = next(iter(dataset.keys()))
-	split = dataset[first_split_name].train_test_split(test_size=0.1, seed=1337, shuffle=True)
-	return split["train"], split["test"]
+    return ""
 
 
-def tokenize_split(split, encoder):
-	"""Tokenize a split into one contiguous token array.
+def tokenize_split(split, encoder) -> np.ndarray:
+    """Tokenize a dataset split into one contiguous uint16 token array.
 
-	Each non-empty story is tokenized with ``encode_ordinary`` (no implicit
-	special-token injection), followed by one ``encoder.eot_token`` to delimit
-	story boundaries in the flattened stream.
-	"""
-	ids = []
-	for example in split:
-		text = story_text(example)
-		if not text:
-			continue
-		ids.extend(encoder.encode_ordinary(text))
-		ids.append(encoder.eot_token)
-	return np.array(ids, dtype=np.uint16)
+    Each non-empty story is tokenized with ``encode_ordinary`` (no implicit
+    special-token injection), followed by one ``encoder.eot_token`` to delimit
+    story boundaries in the flattened stream.
+    """
+    ids = []
+    for example in split:
+        text = story_text(example)
+        if not text:
+            continue
+        ids.extend(encoder.encode_ordinary(text))
+        ids.append(encoder.eot_token)
+    return np.array(ids, dtype=np.uint16)
 
 
+# ---------------------------------------------------------------------------
+# Download dataset
+# ---------------------------------------------------------------------------
+
+print("Downloading ROCStories from Hugging Face …")
 dataset = load_dataset("mintujupally/ROCStories")
-train_split, val_split = pick_train_val_splits(dataset)
 
-# Save raw stories from val_split to val_raw.txt
-base_dir = os.path.dirname(__file__)
-val_raw_path = os.path.join(base_dir, 'val_raw.txt')
-with open(val_raw_path, 'w', encoding='utf-8') as f:
-	for example in val_split:
-		text = story_text(example)
-		if text:
-			f.write(text + '\n')
-print(f"Raw validation stories saved to {val_raw_path}")
+# ---------------------------------------------------------------------------
+# Build the three splits
+# ---------------------------------------------------------------------------
+
+# 1. Final held-out test set — never touch during training
+test_split = dataset["test"]
+print(f"  original test  : {len(test_split):>7,} stories")
+
+# 2. Split the original train set → train (90 %) + val (10 %)
+train_val  = dataset["train"].train_test_split(test_size=0.1, seed=1337, shuffle=True)
+train_split = train_val["train"]
+val_split   = train_val["test"]   # "test" key here is just HF naming; this IS our val set
+print(f"  training split : {len(train_split):>7,} stories  (90 % of original train)")
+print(f"  validation split:{len(val_split):>7,} stories  (10 % of original train)")
+
+# ---------------------------------------------------------------------------
+# Tokenise & save .bin files
+# ---------------------------------------------------------------------------
 
 enc = tiktoken.get_encoding("gpt2")
-train_ids = tokenize_split(train_split, enc)
-val_ids = tokenize_split(val_split, enc)
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
-base_dir = os.path.dirname(__file__)
-train_ids.tofile(os.path.join(base_dir, 'train.bin'))
-val_ids.tofile(os.path.join(base_dir, 'val.bin'))
+for name, split in {"train": train_split, "val": val_split}.items():
+    print(f"\nTokenising {name} split …")
+    ids = tokenize_split(split, enc)
+    out_path = os.path.join(base_dir, f"{name}.bin")
+    ids.tofile(out_path)
+    print(f"  → {out_path}  ({len(ids):,} tokens, {ids.nbytes / 1e6:.1f} MB)")
 
-print("train and val bin files created successfully!")
-print(f"meta.pkl saved with vocab_size={enc.n_vocab}")
-print("train tokens:", len(train_ids))
-print("val tokens:", len(val_ids))
+# Save meta.pkl with tokenizer info
+meta = {
+    "vocab_size": enc.n_vocab,
+    "tokenizer": "gpt2",
+}
+meta_path = os.path.join(base_dir, "meta.pkl")
+with open(meta_path, "wb") as f:
+    pickle.dump(meta, f)
+print(f"\nMeta saved → {meta_path}  (vocab_size={enc.n_vocab})")
+
+# Save test split as plain text (one story per line)
+print("\nSaving test split as plain text …")
+test_path = os.path.join(base_dir, "test.txt")
+with open(test_path, "w", encoding="utf-8") as f:
+    for example in test_split:
+        text = story_text(example)
+        if text:
+            f.write(text + "\n")
+print(f"  → {test_path}")
+
+# ---------------------------------------------------------------------------
+# Summary
+# ---------------------------------------------------------------------------
+
+print("\nDone!")
+print("Files created:")
+for name in ("train", "val"):
+    print(f"  {os.path.join(base_dir, f'{name}.bin')}")
+print(f"  {os.path.join(base_dir, 'test.txt')}")
+print(f"  {os.path.join(base_dir, 'meta.pkl')}")
+print()
+print("Usage reminder:")
+print("  train.bin + val.bin  →  use during model training")
+print("  test.txt             →  plain text stories for final evaluation after training")
+print("  meta.pkl             →  vocab_size + tokenizer info, read by nanoGPT at train time")

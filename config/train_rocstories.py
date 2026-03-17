@@ -3,12 +3,12 @@
 # $ py train.py config/train_rocstories.py
 
 out_dir = 'out-rocstories'
-eval_interval = 200
-eval_iters = 40
-log_interval = 10
+eval_interval = 20  # more frequent evals
+eval_iters = 5      # fewer eval batches
+log_interval = 2    # more frequent logs
 
 # save only when validation improves
-always_save_checkpoint = False
+always_save_checkpoint = True  # save every checkpoint for quick runs
 
 wandb_log = False
 wandb_project = 'rocstories'
@@ -18,26 +18,29 @@ dataset = 'rocstories'
 
 # effective tokens/iter = grad_accum * batch * block
 # 8 * 8 * 512 = 32,768 tokens/iter on single GPU
-gradient_accumulation_steps = 8
-batch_size = 16
-block_size = 1024
+gradient_accumulation_steps = 2  # smaller for quick runs
+batch_size = 4                   # smaller batch
+block_size = 256                 # smaller context
 
-# model size: balanced baseline for 8-16GB GPUs
-n_layer = 12
-n_head = 12
-n_embd = 768
-dropout = 0.15
+
+# quick training: much smaller model
+n_layer = 2
+n_head = 2
+n_embd = 128
+dropout = 0.2
 bias = False
 
-learning_rate = 3e-5
-max_iters = 7000
-lr_decay_iters = 7000
-min_lr = 6e-6
-warmup_iters = 1000
 
-weight_decay = 1e-1
+learning_rate = 1e-3
+max_iters = 100   # much fewer iters
+lr_decay_iters = 100
+min_lr = 1e-4
+warmup_iters = 10
+
+
+weight_decay = 0.01
 beta1 = 0.9
-beta2 = 0.95
+beta2 = 0.99
 grad_clip = 1.0
 
 # windows/pytorch-friendly defaults
