@@ -127,7 +127,7 @@ with open(test_path, "w", encoding="utf-8") as f:
     for example in test_split:
         text = story_text(example)
         if text:
-            f.write(text + "\n")
+            f.write(text + "\n\n")
 print(f"  → {test_path}")
 
 # ---------------------------------------------------------------------------
