@@ -21,3 +21,5 @@
 {"time":"2026-03-18T21:30:39.548424234Z","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
 {"time":"2026-03-18T21:30:53.753752276Z","level":"INFO","msg":"filestream: sending request","total_files":1,"events_offset":12,"events_lines":2}
 {"time":"2026-03-18T21:30:54.07864107Z","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-03-18T21:31:08.753644135Z","level":"INFO","msg":"filestream: sending request","total_files":1,"events_offset":14,"events_lines":2}
+{"time":"2026-03-18T21:31:09.152990607Z","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
