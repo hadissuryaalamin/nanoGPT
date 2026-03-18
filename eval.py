@@ -28,7 +28,7 @@ compile = False
 seed = 1337
 
 # data/eval config
-input_file = 'data/rocstories/test.txt'
+input_file = 'data/rocstories/eval_stories.txt'
 input_format = 'txt'  # 'auto' | 'txt' | 'jsonl' | 'json'
 json_text_key = 'text'
 max_paragraphs = -1  # -1 means all
@@ -150,8 +150,11 @@ if load_meta:
     print(f"Loading meta from {meta_path}...")
     with open(meta_path, 'rb') as f:
         meta = pickle.load(f)
-    stoi = meta['stoi']
-    encode = lambda s: [stoi[c] for c in s]
+    # stoi = meta['stoi']
+    # encode = lambda s: [stoi[c] for c in s]
+    # Bcs tokenizer is GPT-2, we can just use tiktoken with the vocab size from meta
+    enc = tiktoken.get_encoding("gpt2")
+    encode = lambda s: enc.encode(s, allowed_special={"<|endoftext|>"})
 else:
     print("No meta.pkl found, assuming GPT-2 encodings...")
     enc = tiktoken.get_encoding("gpt2")
