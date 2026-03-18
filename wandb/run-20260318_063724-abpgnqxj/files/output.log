@@ -1,0 +1,63 @@
+step 5000: train loss 1.4503, val loss 3.9804
+saving checkpoint to out-rocstories
+iter 5000: loss 2.2696, time 2696.75ms, mfu -100.00%
+iter 5020: loss 2.2987, time 399.89ms, mfu 23.66%
+iter 5040: loss 2.2008, time 399.94ms, mfu 23.66%
+iter 5060: loss 2.2403, time 400.73ms, mfu 23.65%
+iter 5080: loss 2.2608, time 401.01ms, mfu 23.65%
+iter 5100: loss 2.2363, time 401.91ms, mfu 23.63%
+iter 5120: loss 2.2426, time 401.76ms, mfu 23.63%
+iter 5140: loss 2.1723, time 402.15ms, mfu 23.62%
+iter 5160: loss 2.1857, time 401.23ms, mfu 23.61%
+iter 5180: loss 2.1832, time 401.25ms, mfu 23.61%
+step 5200: train loss 1.6220, val loss 3.8346
+saving checkpoint to out-rocstories
+iter 5200: loss 2.1417, time 2273.53ms, mfu 21.66%
+iter 5220: loss 2.1673, time 401.30ms, mfu 21.85%
+iter 5240: loss 2.2022, time 401.23ms, mfu 22.03%
+iter 5260: loss 2.1573, time 401.23ms, mfu 22.18%
+iter 5280: loss 2.1187, time 402.38ms, mfu 22.31%
+iter 5300: loss 2.2056, time 401.35ms, mfu 22.44%
+iter 5320: loss 2.1539, time 401.08ms, mfu 22.56%
+iter 5340: loss 2.1800, time 401.33ms, mfu 22.66%
+iter 5360: loss 2.1147, time 401.31ms, mfu 22.75%
+iter 5380: loss 2.1371, time 402.58ms, mfu 22.82%
+step 5400: train loss 1.5883, val loss 3.8374
+saving checkpoint to out-rocstories
+iter 5400: loss 2.1768, time 2274.94ms, mfu 20.96%
+iter 5420: loss 2.1106, time 401.75ms, mfu 21.22%
+iter 5440: loss 2.1525, time 401.20ms, mfu 21.45%
+iter 5460: loss 2.1181, time 401.41ms, mfu 21.66%
+iter 5480: loss 2.1276, time 401.29ms, mfu 21.85%
+iter 5500: loss 2.1379, time 401.37ms, mfu 22.03%
+iter 5520: loss 2.1541, time 401.62ms, mfu 22.18%
+iter 5540: loss 2.1587, time 401.62ms, mfu 22.32%
+iter 5560: loss 2.1455, time 402.62ms, mfu 22.43%
+iter 5580: loss 2.0831, time 401.39ms, mfu 22.55%
+step 5600: train loss 1.5605, val loss 3.8325
+saving checkpoint to out-rocstories
+iter 5600: loss 2.0856, time 2263.55ms, mfu 20.71%
+iter 5620: loss 2.1204, time 401.91ms, mfu 20.99%
+iter 5640: loss 2.0346, time 401.93ms, mfu 21.25%
+iter 5660: loss 2.1077, time 401.93ms, mfu 21.48%
+iter 5680: loss 2.0695, time 401.94ms, mfu 21.68%
+iter 5700: loss 2.0061, time 401.95ms, mfu 21.87%
+iter 5720: loss 2.1164, time 402.17ms, mfu 22.03%
+iter 5740: loss 1.9846, time 401.95ms, mfu 22.18%
+iter 5760: loss 2.1277, time 402.00ms, mfu 22.32%
+iter 5780: loss 2.0470, time 401.98ms, mfu 22.44%
+step 5800: train loss 1.5263, val loss 3.8753
+saving checkpoint to out-rocstories
+iter 5800: loss 2.0654, time 2284.83ms, mfu 20.61%
+iter 5820: loss 2.0095, time 402.01ms, mfu 20.90%
+iter 5840: loss 2.0808, time 401.82ms, mfu 21.17%
+iter 5860: loss 2.0220, time 402.00ms, mfu 21.40%
+iter 5880: loss 2.0780, time 401.96ms, mfu 21.62%
+iter 5900: loss 1.9980, time 401.83ms, mfu 21.81%
+iter 5920: loss 1.9929, time 402.04ms, mfu 21.98%
+iter 5940: loss 2.0852, time 401.98ms, mfu 22.14%
+iter 5960: loss 2.0737, time 401.93ms, mfu 22.28%
+iter 5980: loss 2.0474, time 401.76ms, mfu 22.40%
+step 6000: train loss 1.4902, val loss 3.8398
+saving checkpoint to out-rocstories
+iter 6000: loss 2.0378, time 2281.34ms, mfu 20.58%
