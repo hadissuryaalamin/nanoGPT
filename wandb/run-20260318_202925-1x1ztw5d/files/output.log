@@ -1,0 +1,19 @@
+step 0: train loss 10.8679, val loss 10.8664
+iter 0: loss 10.8744, time 1017.29ms, mfu -100.00%
+iter 20: loss 10.0895, time 83.05ms, mfu 15.33%
+iter 40: loss 9.5823, time 83.81ms, mfu 15.32%
+iter 60: loss 8.8377, time 83.74ms, mfu 15.31%
+iter 80: loss 7.9439, time 84.04ms, mfu 15.29%
+iter 100: loss 6.9713, time 83.51ms, mfu 15.29%
+iter 120: loss 6.3697, time 83.58ms, mfu 15.28%
+iter 140: loss 5.7202, time 83.78ms, mfu 15.28%
+iter 160: loss 5.4458, time 83.89ms, mfu 15.27%
+iter 180: loss 5.2283, time 84.08ms, mfu 15.25%
+step 200: train loss 5.1421, val loss 5.1457
+saving checkpoint to out-rocstories
+eval ppl: 185.36
+Traceback (most recent call last):
+  File "/workspace/nanoGPT/train.py", line 313, in <module>
+    if ppl < best_ppl:
+             ^^^^^^^^
+NameError: name 'best_ppl' is not defined

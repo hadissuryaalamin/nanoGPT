@@ -1,0 +1,138 @@
+step 3000: train loss 2.7296, val loss 3.3267
+saving checkpoint to out-rocstories
+eval ppl: 28.71
+new best ppl 28.71, saved best_ckpt.pt
+iter 3000: loss 2.9687, time 52363.29ms, mfu -100.00%
+iter 3020: loss 2.9175, time 111.39ms, mfu 11.43%
+iter 3040: loss 2.8802, time 160.19ms, mfu 11.08%
+iter 3060: loss 2.8844, time 159.52ms, mfu 10.77%
+iter 3080: loss 2.9745, time 105.24ms, mfu 10.91%
+iter 3100: loss 2.8226, time 104.20ms, mfu 11.04%
+iter 3120: loss 2.9089, time 104.00ms, mfu 11.16%
+iter 3140: loss 2.8486, time 100.26ms, mfu 11.31%
+iter 3160: loss 2.9164, time 159.61ms, mfu 10.98%
+iter 3180: loss 2.7662, time 93.15ms, mfu 11.25%
+step 3200: train loss 2.7346, val loss 3.3700
+saving checkpoint to out-rocstories
+eval ppl: 29.01
+iter 3200: loss 2.8773, time 49992.50ms, mfu 10.13%
+iter 3220: loss 2.8466, time 88.23ms, mfu 10.56%
+iter 3240: loss 3.0643, time 98.22ms, mfu 10.80%
+iter 3260: loss 2.8653, time 87.10ms, mfu 11.18%
+iter 3280: loss 2.8456, time 123.82ms, mfu 11.09%
+iter 3300: loss 2.9078, time 97.89ms, mfu 11.28%
+iter 3320: loss 2.8760, time 97.14ms, mfu 11.47%
+iter 3340: loss 2.9812, time 155.48ms, mfu 11.14%
+iter 3360: loss 2.9268, time 97.66ms, mfu 11.33%
+iter 3380: loss 2.8183, time 158.77ms, mfu 11.00%
+step 3400: train loss 2.6788, val loss 3.3583
+saving checkpoint to out-rocstories
+eval ppl: 28.72
+iter 3400: loss 2.9039, time 51655.17ms, mfu 9.90%
+iter 3420: loss 2.9136, time 160.60ms, mfu 9.70%
+iter 3440: loss 2.8976, time 103.11ms, mfu 9.97%
+iter 3460: loss 2.8272, time 120.17ms, mfu 10.03%
+iter 3480: loss 2.9510, time 149.53ms, mfu 9.88%
+iter 3500: loss 2.8070, time 92.56ms, mfu 10.27%
+iter 3520: loss 2.8243, time 94.84ms, mfu 10.58%
+iter 3540: loss 2.9014, time 103.22ms, mfu 10.76%
+iter 3560: loss 2.6759, time 84.09ms, mfu 11.20%
+iter 3580: loss 2.8134, time 84.12ms, mfu 11.59%
+step 3600: train loss 2.6410, val loss 3.3436
+saving checkpoint to out-rocstories
+eval ppl: 28.69
+new best ppl 28.69, saved best_ckpt.pt
+iter 3600: loss 2.8182, time 55178.90ms, mfu 10.44%
+iter 3620: loss 2.8708, time 90.14ms, mfu 10.80%
+iter 3640: loss 2.8072, time 99.17ms, mfu 11.01%
+iter 3660: loss 2.8458, time 87.20ms, mfu 11.37%
+iter 3680: loss 2.7366, time 127.42ms, mfu 11.23%
+iter 3700: loss 2.8559, time 125.06ms, mfu 11.13%
+iter 3720: loss 2.7352, time 153.11ms, mfu 10.84%
+iter 3740: loss 2.7476, time 127.08ms, mfu 10.76%
+iter 3760: loss 2.6733, time 97.15ms, mfu 11.00%
+iter 3780: loss 2.7189, time 121.21ms, mfu 10.95%
+step 3800: train loss 2.6106, val loss 3.3400
+saving checkpoint to out-rocstories
+eval ppl: 29.06
+iter 3800: loss 2.7615, time 47307.80ms, mfu 9.86%
+iter 3820: loss 2.7003, time 121.63ms, mfu 9.92%
+iter 3840: loss 2.7719, time 97.09ms, mfu 10.24%
+iter 3860: loss 2.8190, time 105.21ms, mfu 10.42%
+iter 3880: loss 2.8895, time 98.19ms, mfu 10.68%
+iter 3900: loss 2.8385, time 98.05ms, mfu 10.91%
+iter 3920: loss 2.8003, time 97.23ms, mfu 11.13%
+iter 3940: loss 2.8726, time 96.53ms, mfu 11.34%
+iter 3960: loss 2.7827, time 102.75ms, mfu 11.44%
+iter 3980: loss 2.8588, time 102.14ms, mfu 11.54%
+step 4000: train loss 2.5646, val loss 3.3572
+saving checkpoint to out-rocstories
+eval ppl: 28.78
+iter 4000: loss 2.7043, time 48346.02ms, mfu 10.39%
+iter 4020: loss 2.7431, time 79.66ms, mfu 10.95%
+iter 4040: loss 2.7913, time 104.57ms, mfu 11.07%
+iter 4060: loss 2.7279, time 159.09ms, mfu 10.77%
+iter 4080: loss 2.8055, time 96.97ms, mfu 11.00%
+iter 4100: loss 2.7883, time 99.20ms, mfu 11.19%
+iter 4120: loss 2.8214, time 150.33ms, mfu 10.92%
+iter 4140: loss 2.7951, time 105.12ms, mfu 11.04%
+iter 4160: loss 2.6866, time 105.18ms, mfu 11.14%
+iter 4180: loss 2.7319, time 159.49ms, mfu 10.83%
+step 4200: train loss 2.5405, val loss 3.3576
+saving checkpoint to out-rocstories
+eval ppl: 28.73
+iter 4200: loss 2.7583, time 50618.40ms, mfu 9.75%
+iter 4220: loss 2.7737, time 158.96ms, mfu 9.57%
+iter 4240: loss 2.7286, time 159.04ms, mfu 9.42%
+iter 4260: loss 2.7695, time 159.01ms, mfu 9.28%
+iter 4280: loss 2.7760, time 129.99ms, mfu 9.33%
+iter 4300: loss 2.6781, time 97.64ms, mfu 9.70%
+iter 4320: loss 2.7770, time 97.11ms, mfu 10.04%
+iter 4340: loss 2.8193, time 96.81ms, mfu 10.35%
+iter 4360: loss 2.6819, time 97.23ms, mfu 10.63%
+iter 4380: loss 2.6215, time 150.69ms, mfu 10.41%
+step 4400: train loss 2.5170, val loss 3.3433
+saving checkpoint to out-rocstories
+eval ppl: 29.15
+iter 4400: loss 2.7388, time 52105.90ms, mfu 9.37%
+iter 4420: loss 2.7295, time 103.62ms, mfu 9.66%
+iter 4440: loss 2.7023, time 159.81ms, mfu 9.49%
+iter 4460: loss 2.7243, time 96.02ms, mfu 9.87%
+iter 4480: loss 2.6781, time 97.99ms, mfu 10.18%
+iter 4500: loss 2.6873, time 91.30ms, mfu 10.56%
+iter 4520: loss 2.6992, time 95.33ms, mfu 10.84%
+iter 4540: loss 2.7333, time 159.74ms, mfu 10.55%
+iter 4560: loss 2.6627, time 159.27ms, mfu 10.30%
+iter 4580: loss 2.7175, time 98.01ms, mfu 10.57%
+step 4600: train loss 2.5016, val loss 3.3626
+saving checkpoint to out-rocstories
+eval ppl: 28.86
+iter 4600: loss 2.7531, time 48522.70ms, mfu 9.51%
+iter 4620: loss 2.6995, time 102.47ms, mfu 9.80%
+iter 4640: loss 2.6644, time 125.00ms, mfu 9.84%
+iter 4660: loss 2.7335, time 159.19ms, mfu 9.66%
+iter 4680: loss 2.6856, time 98.92ms, mfu 9.98%
+iter 4700: loss 2.6582, time 155.18ms, mfu 9.80%
+iter 4720: loss 2.6062, time 95.18ms, mfu 10.16%
+iter 4740: loss 2.6845, time 84.08ms, mfu 10.66%
+iter 4760: loss 2.6956, time 84.38ms, mfu 11.10%
+iter 4780: loss 2.7485, time 84.16ms, mfu 11.51%
+step 4800: train loss 2.4823, val loss 3.3752
+saving checkpoint to out-rocstories
+Traceback (most recent call last):
+  File "/workspace/nanoGPT/train.py", line 297, in <module>
+    eval_result = subprocess.run(
+                  ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2115, in _communicate
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
