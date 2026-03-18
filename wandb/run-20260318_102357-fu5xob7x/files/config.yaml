@@ -1,0 +1,118 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            lzpw8vprers0zww3zzcv51upo30dkwb9:
+                args:
+                    - config/train_rocstories.py
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 32
+                cpu_count_logical: 64
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "53687091200"
+                        used: "13487058944"
+                email: hadisssurya@gmail.com
+                executable: /workspace/nanoGPT/.venv/bin/python
+                git:
+                    commit: c9dfb9255c79c028b8d38483dd3ea79fbee60c84
+                    remote: https://github.com/hadissuryaalamin/nanoGPT.git
+                gpu: NVIDIA GeForce RTX 5090
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 21760
+                      memoryTotal: "34190917632"
+                      name: NVIDIA GeForce RTX 5090
+                      uuid: GPU-53ce3152-09e9-c919-2869-2de0a63386ee
+                host: 12ffee0577b7
+                memory:
+                    total: "270068965376"
+                os: Linux-6.8.0-90-generic-x86_64-with-glibc2.39
+                program: /workspace/nanoGPT/train.py
+                python: CPython 3.12.3
+                root: /workspace/nanoGPT
+                startedAt: "2026-03-18T10:23:57.802834Z"
+                writerId: lzpw8vprers0zww3zzcv51upo30dkwb9
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.12.3
+            "5": 0.25.1
+            "12": 0.25.1
+            "13": linux-x86_64
+always_save_checkpoint:
+    value: true
+backend:
+    value: nccl
+batch_size:
+    value: 16
+beta1:
+    value: 0.9
+beta2:
+    value: 0.95
+bias:
+    value: false
+block_size:
+    value: 256
+compile:
+    value: false
+dataset:
+    value: rocstories
+decay_lr:
+    value: true
+device:
+    value: cuda
+dropout:
+    value: 0.1
+dtype:
+    value: bfloat16
+eval_interval:
+    value: 200
+eval_iters:
+    value: 40
+eval_only:
+    value: false
+grad_clip:
+    value: 1
+gradient_accumulation_steps:
+    value: 8
+init_from:
+    value: scratch
+learning_rate:
+    value: 0.01
+log_interval:
+    value: 20
+lr_decay_iters:
+    value: 4500
+max_iters:
+    value: 5000
+min_lr:
+    value: 0.0005
+n_embd:
+    value: 256
+n_head:
+    value: 8
+n_layer:
+    value: 8
+out_dir:
+    value: out-rocstories
+wandb_log:
+    value: true
+wandb_project:
+    value: rocstories
+wandb_run_name:
+    value: rocstories-gpt
+warmup_iters:
+    value: 500
+weight_decay:
+    value: 0.2

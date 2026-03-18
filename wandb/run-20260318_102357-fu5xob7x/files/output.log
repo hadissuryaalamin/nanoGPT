@@ -1,0 +1,75 @@
+step 0: train loss 10.8679, val loss 10.8664
+iter 0: loss 10.8717, time 995.68ms, mfu -100.00%
+iter 20: loss 8.8267, time 152.99ms, mfu 8.32%
+iter 40: loss 6.3708, time 159.58ms, mfu 8.29%
+iter 60: loss 5.6436, time 125.16ms, mfu 8.48%
+iter 80: loss 5.2699, time 137.77ms, mfu 8.56%
+iter 100: loss 4.9000, time 124.25ms, mfu 8.72%
+iter 120: loss 4.9662, time 117.36ms, mfu 8.94%
+iter 140: loss 4.7186, time 83.86ms, mfu 9.56%
+iter 160: loss 4.7480, time 83.91ms, mfu 10.12%
+iter 180: loss 4.6233, time 84.45ms, mfu 10.62%
+step 200: train loss 4.6500, val loss 4.7037
+saving checkpoint to out-rocstories
+iter 200: loss 4.6821, time 869.54ms, mfu 9.70%
+iter 220: loss 4.5566, time 96.23ms, mfu 10.06%
+iter 240: loss 4.5824, time 96.13ms, mfu 10.38%
+iter 260: loss 4.3190, time 96.66ms, mfu 10.66%
+iter 280: loss 4.4246, time 96.23ms, mfu 10.91%
+iter 300: loss 4.3329, time 159.15ms, mfu 10.62%
+iter 320: loss 4.1247, time 96.71ms, mfu 10.88%
+iter 340: loss 4.1596, time 96.50ms, mfu 11.11%
+iter 360: loss 4.1811, time 144.95ms, mfu 10.88%
+iter 380: loss 3.8331, time 159.16ms, mfu 10.59%
+step 400: train loss 3.8617, val loss 4.0475
+saving checkpoint to out-rocstories
+iter 400: loss 4.0166, time 811.40ms, mfu 9.69%
+iter 420: loss 4.0001, time 84.11ms, mfu 10.23%
+iter 440: loss 3.8568, time 97.27ms, mfu 10.52%
+iter 460: loss 3.7511, time 96.09ms, mfu 10.79%
+iter 480: loss 3.8049, time 158.97ms, mfu 10.51%
+iter 500: loss 3.7528, time 96.99ms, mfu 10.78%
+iter 520: loss 3.6842, time 125.57ms, mfu 10.71%
+iter 540: loss 3.8125, time 96.57ms, mfu 10.96%
+iter 560: loss 3.5311, time 89.77ms, mfu 11.28%
+iter 580: loss 3.6260, time 98.04ms, mfu 11.45%
+step 600: train loss 3.5071, val loss 3.7580
+saving checkpoint to out-rocstories
+iter 600: loss 3.5931, time 915.00ms, mfu 10.45%
+iter 620: loss 3.6216, time 97.33ms, mfu 10.71%
+iter 640: loss 3.5072, time 96.90ms, mfu 10.95%
+iter 660: loss 3.5053, time 97.20ms, mfu 11.17%
+iter 680: loss 3.3246, time 98.18ms, mfu 11.35%
+iter 700: loss 3.4952, time 96.81ms, mfu 11.53%
+iter 720: loss 3.3124, time 159.10ms, mfu 11.18%
+iter 740: loss 3.3141, time 97.45ms, mfu 11.37%
+iter 760: loss 3.2736, time 96.71ms, mfu 11.55%
+iter 780: loss 3.2976, time 145.92ms, mfu 11.26%
+step 800: train loss 3.2843, val loss 3.6240
+saving checkpoint to out-rocstories
+iter 800: loss 3.3419, time 835.36ms, mfu 10.29%
+iter 820: loss 3.2628, time 99.91ms, mfu 10.54%
+iter 840: loss 3.3558, time 96.15ms, mfu 10.81%
+iter 860: loss 3.3549, time 159.01ms, mfu 10.53%
+iter 880: loss 3.4314, time 96.45ms, mfu 10.80%
+iter 900: loss 3.3546, time 96.08ms, mfu 11.04%
+iter 920: loss 3.3168, time 125.84ms, mfu 10.95%
+iter 940: loss 3.3954, time 96.80ms, mfu 11.17%
+iter 960: loss 3.3549, time 96.57ms, mfu 11.37%
+iter 980: loss 3.2894, time 84.08ms, mfu 11.75%
+step 1000: train loss 3.1499, val loss 3.5768
+saving checkpoint to out-rocstories
+iter 1000: loss 3.2095, time 860.47ms, mfu 10.72%
+iter 1020: loss 3.1968, time 103.16ms, mfu 10.88%
+iter 1040: loss 3.2721, time 133.28ms, mfu 10.75%
+Traceback (most recent call last):
+  File "/workspace/nanoGPT/train.py", line 305, in <module>
+    scaler.scale(loss).backward()
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 630, in backward
+    torch.autograd.backward(
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 364, in backward
+    _engine_run_backward(
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

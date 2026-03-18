@@ -1,0 +1,15 @@
+{"time":"2026-03-18T11:01:17.961345339Z","level":"INFO","msg":"wandb-core"}
+{"time":"2026-03-18T11:01:17.962161415Z","level":"INFO","msg":"stream: starting","core version":"0.25.1"}
+{"time":"2026-03-18T11:01:18.341249341Z","level":"INFO","msg":"stream: created new stream","id":"fg1g2m32"}
+{"time":"2026-03-18T11:01:18.341297372Z","level":"INFO","msg":"handler: started"}
+{"time":"2026-03-18T11:01:18.341441645Z","level":"INFO","msg":"stream: started"}
+{"time":"2026-03-18T11:01:18.341483665Z","level":"INFO","msg":"stream: closing"}
+{"time":"2026-03-18T11:01:18.341482693Z","level":"INFO","msg":"sender: started"}
+{"time":"2026-03-18T11:01:18.341480929Z","level":"INFO","msg":"writer: started","stream_id":"fg1g2m32"}
+{"time":"2026-03-18T11:01:18.341961199Z","level":"ERROR","msg":"sender: uploadConfigFile: runhandle: run not yet initialized"}
+{"time":"2026-03-18T11:01:18.342335548Z","level":"ERROR","msg":"runfiles: runhandle: run not yet initialized"}
+{"time":"2026-03-18T11:01:18.342951845Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-18T11:01:18.343030604Z","level":"INFO","msg":"handler: closed"}
+{"time":"2026-03-18T11:01:18.343128069Z","level":"INFO","msg":"sender: closed"}
+{"time":"2026-03-18T11:01:18.34318135Z","level":"INFO","msg":"stream: closed"}
+{"time":"2026-03-18T11:01:18.36441091Z","level":"ERROR","msg":"stream: runURL: runhandle: run not yet initialized"}
