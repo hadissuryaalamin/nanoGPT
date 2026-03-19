@@ -68,3 +68,33 @@ step 8200: train loss 2.4002, val loss 3.3525, ppl 28.57
 iter 8200: loss 2.6583, time 1185.52ms, mfu 12.80%
 iter 8250: loss 2.6865, time 123.79ms, mfu 13.10%
 iter 8300: loss 2.6465, time 104.06ms, mfu 13.68%
+iter 8350: loss 2.6436, time 104.57ms, mfu 14.18%
+step 8400: train loss 2.3989, val loss 3.3467, ppl 28.41
+iter 8400: loss 2.6482, time 1180.57ms, mfu 12.93%
+iter 8450: loss 2.7947, time 104.57ms, mfu 13.51%
+iter 8500: loss 2.8640, time 111.44ms, mfu 13.92%
+iter 8550: loss 2.8324, time 125.86ms, mfu 14.08%
+step 8600: train loss 2.3993, val loss 3.3583, ppl 28.74
+iter 8600: loss 2.7839, time 1184.47ms, mfu 12.84%
+iter 8650: loss 2.7484, time 111.44ms, mfu 13.32%
+iter 8700: loss 2.7801, time 104.77ms, mfu 13.85%
+iter 8750: loss 2.8576, time 104.25ms, mfu 14.35%
+step 8800: train loss 2.3981, val loss 3.3292, ppl 27.92
+iter 8800: loss 2.7070, time 1178.86ms, mfu 13.08%
+iter 8850: loss 2.7993, time 89.26ms, mfu 13.97%
+iter 8900: loss 2.8975, time 110.85ms, mfu 14.34%
+iter 8950: loss 2.7976, time 104.62ms, mfu 14.78%
+step 9000: train loss 2.3966, val loss 3.3568, ppl 28.70
+iter 9000: loss 2.7270, time 1192.17ms, mfu 13.46%
+iter 9050: loss 2.8915, time 104.91ms, mfu 13.99%
+iter 9100: loss 2.8869, time 123.22ms, mfu 14.18%
+iter 9150: loss 2.7553, time 104.30ms, mfu 14.64%
+step 9200: train loss 2.3889, val loss 3.3541, ppl 28.62
+iter 9200: loss 2.7563, time 1198.12ms, mfu 13.34%
+iter 9250: loss 2.7912, time 104.02ms, mfu 13.89%
+iter 9300: loss 2.7419, time 104.37ms, mfu 14.38%
+iter 9350: loss 2.7559, time 105.29ms, mfu 14.80%
+step 9400: train loss 2.4023, val loss 3.3355, ppl 28.09
+iter 9400: loss 2.7573, time 1199.36ms, mfu 13.48%
+iter 9450: loss 2.6902, time 104.33ms, mfu 14.01%
+iter 9500: loss 2.7760, time 111.92ms, mfu 14.36%
