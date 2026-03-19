@@ -133,7 +133,6 @@ def get_batch(split):
 # init these up here, can override if init_from='resume' (i.e. from a checkpoint)
 iter_num = 0
 best_val_loss = 1e9
-best_ppl = float('inf') # add by Hadis 19 March 2026, track best ppl for saving best checkpoint by ppl metric
 
 # attempt to derive vocab_size from the dataset
 meta_path = os.path.join(data_dir, 'meta.pkl')
@@ -271,7 +270,7 @@ while True:
                 "val/loss": losses['val'],
                 "lr": lr,
                 "mfu": running_mfu*100, # convert to percentage
-            })    
+            })
         if losses['val'] < best_val_loss or always_save_checkpoint:
             best_val_loss = losses['val']
             if iter_num > 0:
@@ -285,44 +284,6 @@ while True:
                 }
                 print(f"saving checkpoint to {out_dir}")
                 torch.save(checkpoint, os.path.join(out_dir, 'ckpt.pt'))
-                # add by Hadis 19 March 2026
-                # after we save the checkpoint, we immidiately run 'eval.py --init_from=resume --out_dir=out-rocstories'
-                # save the best checkpoint by ppl metric 'best_ckpt.pt'
-                # TODO: implement
-                # add by Hadis 19 March 2026
-                # after we save the checkpoint, we immediately run eval.py and save best checkpoint by ppl
-                import subprocess
-                import shutil
-
-                eval_result = subprocess.run(
-                    ['python', 'eval.py', '--init_from=resume', '--out_dir=out-rocstories'],
-                    capture_output=True,
-                    text=True
-                )
-
-                # Parse perplexity from eval.py output line: "ppl             : 12.34"
-                ppl = None
-                for line in eval_result.stdout.splitlines():
-                    if line.strip().startswith('ppl'):
-                        try:
-                            ppl = float(line.split(':')[-1].strip())
-                        except ValueError:
-                            pass
-
-                if ppl is not None:
-                    print(f"eval ppl: {ppl:.2f}")
-                    if ppl < best_ppl:
-                        best_ppl = ppl
-                        shutil.copy(
-                            os.path.join(out_dir, 'ckpt.pt'),
-                            os.path.join(out_dir, 'best_ckpt.pt')
-                        )
-                        print(f"new best ppl {ppl:.2f}, saved best_ckpt.pt")
-                else:
-                    print(f"warning: could not parse ppl from eval.py output")
-                    if eval_result.stderr:
-                        print(eval_result.stderr[-500:])  # print tail of stderr for debugging 
-
     if iter_num == 0 and eval_only:
         break
 
