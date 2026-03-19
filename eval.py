@@ -26,10 +26,9 @@ device = 'cuda'  # 'cpu', 'cuda', 'cuda:0', ...
 dtype = 'bfloat16' if torch.cuda.is_available() and torch.cuda.is_bf16_supported() else 'float16'
 compile = False
 seed = 1337
-model_ckpt = 'ckpt.pt' # ckpt.pt when training, best_ckpt.pt for best ppl
 
 # data/eval config
-input_file = 'data/rocstories/eval_stories.txt'
+input_file = 'data/rocstories/test.txt'
 input_format = 'txt'  # 'auto' | 'txt' | 'jsonl' | 'json'
 json_text_key = 'text'
 max_paragraphs = -1  # -1 means all
@@ -122,7 +121,7 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
 
 # model
 if init_from == 'resume':
-    ckpt_path = os.path.join(out_dir, model_ckpt) # add by Hadis
+    ckpt_path = os.path.join(out_dir, 'ckpt.pt')
     checkpoint = torch.load(ckpt_path, map_location=device)
     gptconf = GPTConfig(**checkpoint['model_args'])
     model = GPT(gptconf)
