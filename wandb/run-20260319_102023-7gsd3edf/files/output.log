@@ -1,0 +1,29 @@
+step 5600: train loss 2.4149, val loss 3.3464, ppl 28.40
+iter 5600: loss 2.6240, time 1656.66ms, mfu -100.00%
+iter 5650: loss 2.7430, time 97.51ms, mfu 20.10%
+iter 5700: loss 2.7475, time 119.08ms, mfu 19.73%
+iter 5750: loss 2.7500, time 103.67ms, mfu 19.65%
+step 5800: train loss 2.4129, val loss 3.3479, ppl 28.44
+iter 5800: loss 2.7279, time 1183.36ms, mfu 17.85%
+iter 5850: loss 2.7135, time 104.34ms, mfu 17.94%
+iter 5900: loss 2.7211, time 104.39ms, mfu 18.03%
+iter 5950: loss 2.7558, time 125.42ms, mfu 17.79%
+step 6000: train loss 2.4007, val loss 3.3450, ppl 28.36
+iter 6000: loss 2.6887, time 1184.63ms, mfu 16.17%
+iter 6050: loss 2.6908, time 124.79ms, mfu 16.13%
+iter 6100: loss 2.8163, time 121.00ms, mfu 16.13%
+iter 6150: loss 2.7913, time 114.68ms, mfu 16.23%
+step 6200: train loss 2.4009, val loss 3.3455, ppl 28.37
+iter 6200: loss 2.6961, time 1181.77ms, mfu 14.77%
+iter 6250: loss 2.6573, time 124.70ms, mfu 14.87%
+iter 6300: loss 2.7725, time 109.18ms, mfu 15.18%
+iter 6350: loss 2.8900, time 123.18ms, mfu 15.25%
+step 6400: train loss 2.4039, val loss 3.3457, ppl 28.38
+iter 6400: loss 2.8353, time 1192.02ms, mfu 13.89%
+iter 6450: loss 2.8558, time 104.81ms, mfu 14.37%
+iter 6500: loss 2.7390, time 124.98ms, mfu 14.50%
+iter 6550: loss 2.7125, time 125.52ms, mfu 14.61%
+step 6600: train loss 2.4049, val loss 3.3337, ppl 28.04
+iter 6600: loss 2.7257, time 1184.22ms, mfu 13.32%
+iter 6650: loss 2.7786, time 112.05ms, mfu 13.73%
+iter 6700: loss 2.8262, time 124.53ms, mfu 13.93%

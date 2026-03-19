@@ -1,0 +1,43 @@
+{
+  "os": "Linux-6.8.0-90-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.3",
+  "startedAt": "2026-03-19T10:20:23.360049Z",
+  "args": [
+    "config/train_rocstories.py"
+  ],
+  "program": "/workspace/nanoGPT/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/hadissuryaalamin/nanoGPT.git",
+    "commit": "080d403f36534ced3bef0a81ed375aa31b9d7384"
+  },
+  "email": "hadisssurya@gmail.com",
+  "root": "/workspace/nanoGPT",
+  "host": "12ffee0577b7",
+  "executable": "/workspace/nanoGPT/.venv/bin/python",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "53687091200",
+      "used": "14763286528"
+    }
+  },
+  "memory": {
+    "total": "270068965376"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 5090",
+      "memoryTotal": "34190917632",
+      "cudaCores": 21760,
+      "architecture": "Blackwell",
+      "uuid": "GPU-53ce3152-09e9-c919-2869-2de0a63386ee"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "9a6dc07ejamp1cjcu9t5mw2wcy3ka4bq"
+}

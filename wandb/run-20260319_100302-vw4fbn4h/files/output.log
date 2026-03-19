@@ -1,0 +1,48 @@
+step 2800: train loss 2.5129, val loss 3.3879, ppl 29.60
+iter 2800: loss 2.5952, time 1657.65ms, mfu -100.00%
+iter 2850: loss 2.6237, time 124.33ms, mfu 15.76%
+iter 2900: loss 2.6515, time 112.59ms, mfu 15.93%
+iter 2950: loss 2.6204, time 103.91ms, mfu 16.22%
+step 3000: train loss 2.4260, val loss 3.3549, ppl 28.64
+saving checkpoint to out-rocstories
+iter 3000: loss 2.5885, time 1650.36ms, mfu 14.72%
+iter 3050: loss 2.5960, time 104.30ms, mfu 15.12%
+iter 3100: loss 2.5641, time 104.27ms, mfu 15.49%
+iter 3150: loss 2.6105, time 104.10ms, mfu 15.83%
+step 3200: train loss 2.3917, val loss 3.3533, ppl 28.60
+saving checkpoint to out-rocstories
+iter 3200: loss 2.5417, time 1650.83ms, mfu 14.36%
+iter 3250: loss 2.5022, time 117.72ms, mfu 14.59%
+iter 3300: loss 2.6580, time 104.25ms, mfu 15.01%
+iter 3350: loss 2.5915, time 124.33ms, mfu 15.09%
+step 3400: train loss 2.3715, val loss 3.3560, ppl 28.68
+iter 3400: loss 2.4980, time 1189.59ms, mfu 13.74%
+iter 3450: loss 2.4748, time 124.53ms, mfu 13.94%
+iter 3500: loss 2.5741, time 120.25ms, mfu 14.18%
+iter 3550: loss 2.7243, time 104.77ms, mfu 14.63%
+step 3600: train loss 2.3609, val loss 3.3549, ppl 28.64
+iter 3600: loss 2.6667, time 1189.64ms, mfu 13.33%
+iter 3650: loss 2.6348, time 105.05ms, mfu 13.86%
+Traceback (most recent call last):
+  File "/workspace/nanoGPT/train.py", line 301, in <module>
+    logits, loss = model(X, Y)
+                   ^^^^^^^^^^^
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nanoGPT/model.py", line 186, in forward
+    logits = self.lm_head(x)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nanoGPT/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

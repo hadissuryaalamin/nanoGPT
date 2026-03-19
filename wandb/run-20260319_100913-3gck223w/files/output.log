@@ -1,0 +1,43 @@
+step 4400: train loss 2.3863, val loss 3.3477, ppl 28.44
+iter 4400: loss 2.6614, time 1695.76ms, mfu -100.00%
+iter 4450: loss 2.7723, time 104.25ms, mfu 18.80%
+iter 4500: loss 2.7718, time 123.93ms, mfu 18.50%
+iter 4550: loss 2.7758, time 124.05ms, mfu 18.23%
+step 4600: train loss 2.4114, val loss 3.3497, ppl 28.49
+iter 4600: loss 2.7518, time 1184.47ms, mfu 16.57%
+iter 4650: loss 2.7397, time 104.28ms, mfu 16.79%
+iter 4700: loss 2.7414, time 123.43ms, mfu 16.70%
+iter 4750: loss 2.7748, time 103.82ms, mfu 16.92%
+step 4800: train loss 2.4020, val loss 3.3464, ppl 28.40
+iter 4800: loss 2.7086, time 1187.74ms, mfu 15.39%
+iter 4850: loss 2.7097, time 104.33ms, mfu 15.73%
+iter 4900: loss 2.8356, time 104.83ms, mfu 16.03%
+iter 4950: loss 2.8102, time 124.51ms, mfu 16.00%
+step 5000: train loss 2.4029, val loss 3.3461, ppl 28.39
+iter 5000: loss 2.7117, time 1192.25ms, mfu 14.56%
+iter 5050: loss 2.6730, time 125.04ms, mfu 14.68%
+iter 5100: loss 2.7913, time 124.48ms, mfu 14.78%
+iter 5150: loss 2.9083, time 104.97ms, mfu 15.17%
+step 5200: train loss 2.4064, val loss 3.3460, ppl 28.39
+iter 5200: loss 2.8534, time 1189.20ms, mfu 13.82%
+iter 5250: loss 2.8721, time 104.50ms, mfu 14.31%
+iter 5300: loss 2.7541, time 104.82ms, mfu 14.75%
+iter 5350: loss 2.7258, time 104.38ms, mfu 15.15%
+step 5400: train loss 2.4078, val loss 3.3339, ppl 28.05
+iter 5400: loss 2.7402, time 1184.20ms, mfu 13.80%
+iter 5450: loss 2.7945, time 104.81ms, mfu 14.29%
+iter 5500: loss 2.8393, time 104.66ms, mfu 14.74%
+iter 5550: loss 2.8452, time 109.81ms, mfu 15.05%
+step 5600: train loss 2.4084, val loss 3.3262, ppl 27.83
+saving checkpoint to out-rocstories
+iter 5600: loss 2.9242, time 1619.10ms, mfu 13.66%
+iter 5650: loss 2.6330, time 105.56ms, mfu 14.15%
+iter 5700: loss 2.6258, time 104.73ms, mfu 14.61%
+iter 5750: loss 2.6980, time 104.68ms, mfu 15.02%
+step 5800: train loss 2.4066, val loss 3.3431, ppl 28.31
+iter 5800: loss 2.8809, time 1188.32ms, mfu 13.68%
+iter 5850: loss 2.7134, time 104.98ms, mfu 14.18%
+iter 5900: loss 2.8142, time 100.50ms, mfu 14.71%
+iter 5950: loss 2.7265, time 104.41ms, mfu 15.12%
+step 6000: train loss 2.4207, val loss 3.3493, ppl 28.48
+iter 6000: loss 2.7762, time 1192.73ms, mfu 13.77%
