@@ -89,12 +89,12 @@ dataset = load_dataset("mintujupally/ROCStories")
 test_split = dataset["test"]
 print(f"  original test  : {len(test_split):>7,} stories")
 
-# 2. Split the original train set → train (90 %) + val (10 %)
-train_val  = dataset["train"].train_test_split(test_size=0.1, seed=1337, shuffle=True)
+# 2. Split the original train set → train (80 %) + val (20 %)
+train_val  = dataset["train"].train_test_split(test_size=0.2, seed=1337, shuffle=True)
 train_split = train_val["train"]
 val_split   = train_val["test"]   # "test" key here is just HF naming; this IS our val set
-print(f"  training split : {len(train_split):>7,} stories  (90 % of original train)")
-print(f"  validation split:{len(val_split):>7,} stories  (10 % of original train)")
+print(f"  training split : {len(train_split):>7,} stories  (80 % of original train)")
+print(f"  validation split:{len(val_split):>7,} stories  (20 % of original train)")
 
 # ---------------------------------------------------------------------------
 # Tokenise & save .bin files
