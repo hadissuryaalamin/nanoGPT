@@ -16,7 +16,7 @@ dataset = 'rocstories'
 
 batch_size = 32     # larger stable training, smaller for saving memory GPU
 # Parameters that affect the model size
-block_size = 128    # larger more understanding context, smaller faster runs
+block_size = 64    # larger more understanding context, smaller faster runs
 n_layer = 6         # larger for better reasoning(complexity understanding)
 n_head = 6          # larger for more various attention patterns(better prespectives) 
 n_embd = 384        # larger for more representation
