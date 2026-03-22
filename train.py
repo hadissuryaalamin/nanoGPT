@@ -113,22 +113,85 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
 
 # poor man's data loader
 data_dir = os.path.join('data', dataset)
+# def get_batch(split):
+#     # We recreate np.memmap every batch to avoid a memory leak, as per
+#     # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
+#     if split == 'train':
+#         data = np.memmap(os.path.join(data_dir, 'train.bin'), dtype=np.uint16, mode='r')
+#     else:
+#         data = np.memmap(os.path.join(data_dir, 'val.bin'), dtype=np.uint16, mode='r')
+#     ix = torch.randint(len(data) - block_size, (batch_size,))
+#     x = torch.stack([torch.from_numpy((data[i:i+block_size]).astype(np.int64)) for i in ix])
+#     y = torch.stack([torch.from_numpy((data[i+1:i+1+block_size]).astype(np.int64)) for i in ix])
+#     if device_type == 'cuda':
+#         # pin arrays x,y, which allows us to move them to GPU asynchronously (non_blocking=True)
+#         x, y = x.pin_memory().to(device, non_blocking=True), y.pin_memory().to(device, non_blocking=True)
+#     else:
+#         x, y = x.to(device), y.to(device)
+#     return x, y
+
+#-----------------------------Modified code starts here-----------------------------
+
+def build_story_index(bin_path):
+    """Return list of (start, end) inclusive token indices per story."""
+    data = np.fromfile(bin_path, dtype=np.uint16)
+    EOT = 50256
+    boundaries = []
+    start = 0
+    for i, tok in enumerate(data):
+        if tok == EOT:
+            boundaries.append((start, i))  # end = posisi EOT, ikut disertakan
+            start = i + 1
+    return boundaries
+
+train_stories = build_story_index(os.path.join(data_dir, 'train.bin'))
+val_stories   = build_story_index(os.path.join(data_dir, 'val.bin'))
+
 def get_batch(split):
-    # We recreate np.memmap every batch to avoid a memory leak, as per
-    # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
-    if split == 'train':
-        data = np.memmap(os.path.join(data_dir, 'train.bin'), dtype=np.uint16, mode='r')
-    else:
-        data = np.memmap(os.path.join(data_dir, 'val.bin'), dtype=np.uint16, mode='r')
-    ix = torch.randint(len(data) - block_size, (batch_size,))
-    x = torch.stack([torch.from_numpy((data[i:i+block_size]).astype(np.int64)) for i in ix])
-    y = torch.stack([torch.from_numpy((data[i+1:i+1+block_size]).astype(np.int64)) for i in ix])
+    data = np.memmap(
+        os.path.join(data_dir, 'train.bin' if split == 'train' else 'val.bin'),
+        dtype=np.uint16, mode='r'
+    )
+    stories = train_stories if split == 'train' else val_stories
+    EOT = 50256
+
+    xs, ys = [], []
+    # Sample batch_size stories secara acak
+    idxs = torch.randint(len(stories), (batch_size,)).tolist()
+    for i in idxs:
+        s, e = stories[i]
+        tokens = data[s:e+1].astype(np.int64)
+
+        # Truncate kalau lebih panjang dari block_size
+        tokens = tokens[:block_size + 1]
+
+        # Buat x dan y (shifted by 1)
+        x_tok = np.full(block_size,     EOT, dtype=np.int64)
+        y_tok = np.full(block_size,     -1,        dtype=np.int64)  # -1 = ignored by loss
+ 
+        story_len = len(tokens)
+        x_len = min(story_len - 1, block_size)  # token input
+        y_len = min(story_len - 1, block_size)  # token target
+ 
+        x_tok[:x_len] = tokens[:x_len]           # input tokens
+        y_tok[:y_len] = tokens[1:y_len + 1]      # target tokens (shifted +1)
+        # Sisa padding di y tetap -1 → diabaikan CrossEntropyLoss
+ 
+        xs.append(torch.from_numpy(x_tok))
+        ys.append(torch.from_numpy(y_tok))
+
+    x = torch.stack(xs)
+    y = torch.stack(ys)
+
     if device_type == 'cuda':
-        # pin arrays x,y, which allows us to move them to GPU asynchronously (non_blocking=True)
-        x, y = x.pin_memory().to(device, non_blocking=True), y.pin_memory().to(device, non_blocking=True)
+        x = x.pin_memory().to(device, non_blocking=True)
+        y = y.pin_memory().to(device, non_blocking=True)
     else:
         x, y = x.to(device), y.to(device)
     return x, y
+
+
+#-----------------------------End of modified code-----------------------------
 
 # init these up here, can override if init_from='resume' (i.e. from a checkpoint)
 iter_num = 0
