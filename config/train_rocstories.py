@@ -8,7 +8,7 @@
 # =============================================================================
 out_dir = 'out-rocstories'
 # init_from = 'resume'                # 'scratch' or 'resume' from out_dir checkpoint
-always_save_checkpoint = True       # save every checkpoint for quick runs
+always_save_checkpoint = False       # save every checkpoint for quick runs
 
 # =============================================================================
 # Logging (Weights & Biases)
@@ -23,24 +23,24 @@ dataset = 'rocstories'
 # Architecture  (26_36.pt config — ~19M params, under 32M limit)
 # =============================================================================
 block_size = 256    # larger = more context understanding, smaller = faster runs
-n_layer = 24        # deeper model, better reasoning & complexity understanding
-n_head = 16         # more attention patterns = better perspectives
-n_embd = 256        # representation size (n_embd must be divisible by n_head)
+n_layer = 6        # deeper model, better reasoning & complexity understanding
+n_head = 6         # more attention patterns = better perspectives
+n_embd = 384        # representation size (n_embd must be divisible by n_head)
 bias = False
 
 # =============================================================================
 # Training Batch & Memory
 # =============================================================================
-batch_size = 16                     # smaller to fit deeper model in GPU memory
-gradient_accumulation_steps = 8     # effective batch = 16 * 8 = 128, stable training
-dtype = 'float16'
+batch_size = 32                     # smaller to fit deeper model in GPU memory
+gradient_accumulation_steps = 8     # effective batch = 32 * 8 = 256, stable training
+dtype = 'float32'
 device = 'cuda'
 compile = True
 
 # =============================================================================
 # Regularization
 # =============================================================================
-dropout = 0.15                      # from 26_36.pt — less dropout for deeper model
+dropout = 0.2                       # from 26_36.pt — less dropout for deeper model
 weight_decay = 0.2                  # regularization to reduce overfitting
 
 # =============================================================================
@@ -48,15 +48,15 @@ weight_decay = 0.2                  # regularization to reduce overfitting
 # =============================================================================
 learning_rate = 6e-4                # higher LR suits deeper model from scratch
 min_lr = 6e-5                       # 10% of learning_rate
-warmup_iters = 500                  # stable warmup before full LR
+warmup_iters = 1000                  # stable warmup before full LR
 beta2 = 0.99                        # stable gradient accumulation
 
 # =============================================================================
 # Iteration & Evaluation
 # =============================================================================
-max_iters = 30000
-lr_decay_iters = 30000              # decay LR across full training run
-eval_interval = 400                 # evaluate every N iters
-eval_iters = 200                    # iters to average for stable val loss estimate
-log_interval = 10
+max_iters = 50000
+lr_decay_iters = 50000              # decay LR across full training run
+eval_interval = 500                 # evaluate every N iters
+eval_iters = 400                    # iters to average for stable val loss estimate
+log_interval = 50
 grad_clip = 1.0                     # clip gradients to prevent exploding
