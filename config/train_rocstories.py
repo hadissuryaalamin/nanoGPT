@@ -15,7 +15,7 @@ always_save_checkpoint = True       # save every checkpoint for quick runs
 # =============================================================================
 wandb_log = True
 wandb_project = 'rocstories'
-wandb_run_name = 'rocstories-gpt-26_36-30k'
+wandb_run_name = 'rocstories'
 
 dataset = 'rocstories'
 
