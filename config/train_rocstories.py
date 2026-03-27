@@ -7,13 +7,13 @@
 # Output & Checkpointing
 # =============================================================================
 out_dir = 'out-rocstories'
-# init_from = 'resume'                # 'scratch' or 'resume' from out_dir checkpoint
+init_from = 'resume'                # 'scratch' or 'resume' from out_dir checkpoint
 always_save_checkpoint = False       # save every checkpoint for quick runs
 
 # =============================================================================
 # Logging (Weights & Biases)
 # =============================================================================
-wandb_log = True
+wandb_log = False
 wandb_project = 'rocstories'
 wandb_run_name = 'rocstories'
 
@@ -33,9 +33,9 @@ bias = False
 # =============================================================================
 batch_size = 32                     # smaller to fit deeper model in GPU memory
 gradient_accumulation_steps = 8     # effective batch = 32 * 8 = 256, stable training
-dtype = 'float32'
+dtype = 'float16'
 device = 'cuda'
-compile = True
+compile = False
 
 # =============================================================================
 # Regularization
@@ -46,17 +46,17 @@ weight_decay = 0.2                  # regularization to reduce overfitting
 # =============================================================================
 # Learning Rate Schedule
 # =============================================================================
-learning_rate = 6e-4                # higher LR suits deeper model from scratch
-min_lr = 6e-5                       # 10% of learning_rate
+learning_rate = 8e-5                # higher LR suits deeper model from scratch
+min_lr = 8e-6                       # 10% of learning_rate
 warmup_iters = 1000                  # stable warmup before full LR
-beta2 = 0.99                        # stable gradient accumulation
+beta2 = 0.95                        # stable gradient accumulation
 
 # =============================================================================
 # Iteration & Evaluation
 # =============================================================================
-max_iters = 50000
-lr_decay_iters = 50000              # decay LR across full training run
-eval_interval = 500                 # evaluate every N iters
+max_iters = 39000                    # total training iterations (adjust for quick runs)
+lr_decay_iters = 39000              # decay LR across full training run
+eval_interval = 400                 # evaluate every N iters
 eval_iters = 400                    # iters to average for stable val loss estimate
 log_interval = 50
 grad_clip = 1.0                     # clip gradients to prevent exploding

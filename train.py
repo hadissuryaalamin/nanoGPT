@@ -128,6 +128,37 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
 # poor man's data loader
 data_dir = os.path.join('data', dataset)
 
+# Pre-compute story start positions untuk setiap split.
+# Story start = posisi tepat setelah token <|endoftext|> (50256).
+# Ini dilakukan sekali saat startup supaya get_batch tidak perlu scan ulang tiap call.
+EOT_TOKEN = 50256
+ 
+def compute_story_starts(data):
+    """Return array of indices where each story starts (right after <|endoftext|>).
+    Index 0 selalu dimasukkan sebagai story pertama.
+    Hanya ambil posisi yang masih punya ruang minimal block_size token ke depan.
+    """
+    eot_positions = np.where(np.array(data, dtype=np.int32) == EOT_TOKEN)[0]
+    # Story mulai 1 posisi setelah EOT
+    starts = eot_positions + 1
+    # Tambahkan posisi 0 (story pertama tidak ada EOT sebelumnya)
+    starts = np.concatenate([[0], starts])
+    # Buang posisi yang terlalu dekat ujung (tidak cukup block_size token)
+    starts = starts[starts + block_size < len(data)]
+    return starts
+ 
+print("Pre-computing story start positions ...")
+_train_data_full = np.memmap(os.path.join(data_dir, 'train.bin'), dtype=np.uint16, mode='r')
+_val_data_full   = np.memmap(os.path.join(data_dir, 'val.bin'),   dtype=np.uint16, mode='r')
+story_starts = {
+    'train': compute_story_starts(_train_data_full),
+    'val':   compute_story_starts(_val_data_full),
+}
+print(f"  train: {len(story_starts['train']):,} story start positions")
+print(f"  val  : {len(story_starts['val']):,} story start positions")
+# Bebaskan memmap sementara — akan di-recreate tiap get_batch seperti semula
+del _train_data_full, _val_data_full
+
 def get_batch(split):
     # We recreate np.memmap every batch to avoid a memory leak, as per
     # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
@@ -135,6 +166,10 @@ def get_batch(split):
         data = np.memmap(os.path.join(data_dir, 'train.bin'), dtype=np.uint16, mode='r')
     else:
         data = np.memmap(os.path.join(data_dir, 'val.bin'), dtype=np.uint16, mode='r')
+
+    starts = story_starts[split]
+    chosen = np.random.randint(0, len(starts), size=batch_size)
+    ix = starts[chosen]
 
     ix = torch.randint(len(data) - block_size, (batch_size,))
     x = torch.stack([torch.from_numpy((data[i:i + block_size]).astype(np.int64)) for i in ix])
