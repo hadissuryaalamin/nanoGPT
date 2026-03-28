@@ -12,3 +12,4 @@ env/
 venv/
 /output/
 wandb/
+*.tmp.driveupload

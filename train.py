@@ -171,7 +171,7 @@ def get_batch(split):
     chosen = np.random.randint(0, len(starts), size=batch_size)
     ix = starts[chosen]
 
-    ix = torch.randint(len(data) - block_size, (batch_size,))
+    # ix = torch.randint(len(data) - block_size, (batch_size,))
     x = torch.stack([torch.from_numpy((data[i:i + block_size]).astype(np.int64)) for i in ix])
     y = torch.stack([torch.from_numpy((data[i + 1:i + 1 + block_size]).astype(np.int64)) for i in ix])
 
@@ -395,7 +395,8 @@ while True:
                 "mfu": running_mfu * 100,
             })
 
-        if losses['val'] < best_val_loss or always_save_checkpoint:
+        got_best_val_loss = losses['val'] < 3.3 and losses['val'] < best_val_loss
+        if got_best_val_loss:
             best_val_loss = losses['val']
             if iter_num > 0:
                 checkpoint = {
@@ -409,9 +410,11 @@ while True:
                 }
                 print(f"saving checkpoint to {out_dir}")
                 torch.save(checkpoint, os.path.join(out_dir, 'ckpt.pt'))
+        else:
+            print(f"val loss {losses['val']:.4f} not improved (best: {best_val_loss:.4f}), skipping checkpoint and external eval")
 
-    # run eval.py on saved checkpoint; if ppl is better, save ckpt_best.pt
-    if iter_num % eval_interval == 0 and master_process and iter_num > 0:
+    # run eval.py only when we got a new best val loss
+    if iter_num % eval_interval == 0 and master_process and iter_num > 0 and got_best_val_loss:
         ppl = run_external_eval_and_get_ppl()
         if ppl is not None:
             print(f"external eval ppl: {ppl:.4f}")

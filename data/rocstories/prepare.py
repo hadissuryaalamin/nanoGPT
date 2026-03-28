@@ -6,8 +6,8 @@ Preprocessing summary:
 Split strategy:
     ROCStories original splits
     ├── train (98k stories)
-    │   ├── train.bin  ← 95%  fed to the model during training (93k stories)
-    │   └── val.bin    ← 5%  monitors loss / detects overfitting (5k stories)
+    │   ├── train.bin  ← 90%  fed to the model during training (88k stories)
+    │   └── val.bin    ← 10%  monitors loss / detects overfitting (10k stories)
     └── test  (3.7k stories)
         └── test.bin   ← final held-out benchmark; touch only after training
 
@@ -89,12 +89,12 @@ dataset = load_dataset("mintujupally/ROCStories")
 test_split = dataset["test"]
 print(f"  original test  : {len(test_split):>7,} stories")
 
-# 2. Split the original train set → train (95 %) + val (5 %)
-train_val  = dataset["train"].train_test_split(test_size=0.05, seed=1337, shuffle=True)
+# 2. Split the original train set → train (90 %) + val (10 %)
+train_val  = dataset["train"].train_test_split(test_size=0.10, seed=1337, shuffle=True)
 train_split = train_val["train"]
 val_split   = train_val["test"]   # "test" key here is just HF naming; this IS our val set
-print(f"  training split : {len(train_split):>7,} stories  (95 % of original train)")
-print(f"  validation split:{len(val_split):>7,} stories  (5 % of original train)")
+print(f"  training split : {len(train_split):>7,} stories  (90 % of original train)")
+print(f"  validation split:{len(val_split):>7,} stories  (10 % of original train)")
 
 # ---------------------------------------------------------------------------
 # Tokenise & save .bin files
