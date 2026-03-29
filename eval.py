@@ -28,7 +28,7 @@ compile = False
 seed = 1337
 
 # data/eval config
-input_file = 'data/rocstories/test.txt'
+input_file = 'data/rocstories/eval_stories.txt'
 input_format = 'txt'  # 'auto' | 'txt' | 'jsonl' | 'json'
 json_text_key = 'text'
 max_paragraphs = -1  # -1 means all
