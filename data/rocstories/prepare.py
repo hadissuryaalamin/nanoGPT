@@ -5,11 +5,8 @@ Preprocessing summary:
 
 Split strategy:
     ROCStories original splits
-    ├── train (98k stories)
-    │   ├── train.bin  ← 90%  fed to the model during training (88k stories)
-    │   └── val.bin    ← 10%  monitors loss / detects overfitting (10k stories)
-    └── test  (3.7k stories)
-        └── test.bin   ← final held-out benchmark; touch only after training
+    ├── train (98k stories) → train.bin  fed to the model during training
+    └── test  (3.7k stories) → val.bin   monitors loss / detects overfitting
 
 - Story text construction: prefers ``story``; otherwise joins
     ``sentence1``..``sentence5`` with spaces; falls back to ``text``.
@@ -85,16 +82,10 @@ dataset = load_dataset("mintujupally/ROCStories")
 # Build the three splits
 # ---------------------------------------------------------------------------
 
-# 1. Final held-out test set — never touch during training
-test_split = dataset["test"]
-print(f"  original test  : {len(test_split):>7,} stories")
-
-# 2. Split the original train set → train (90 %) + val (10 %)
-train_val  = dataset["train"].train_test_split(test_size=0.10, seed=1337, shuffle=True)
-train_split = train_val["train"]
-val_split   = train_val["test"]   # "test" key here is just HF naming; this IS our val set
-print(f"  training split : {len(train_split):>7,} stories  (90 % of original train)")
-print(f"  validation split:{len(val_split):>7,} stories  (10 % of original train)")
+train_split = dataset["train"]
+val_split   = dataset["test"]
+print(f"  training split   : {len(train_split):>7,} stories")
+print(f"  validation split : {len(val_split):>7,} stories")
 
 # ---------------------------------------------------------------------------
 # Tokenise & save .bin files
@@ -120,16 +111,6 @@ with open(meta_path, "wb") as f:
     pickle.dump(meta, f)
 print(f"\nMeta saved → {meta_path}  (vocab_size={enc.n_vocab})")
 
-# Save test split as plain text (one story per line)
-print("\nSaving test split as plain text …")
-test_path = os.path.join(base_dir, "test.txt")
-with open(test_path, "w", encoding="utf-8") as f:
-    for example in test_split:
-        text = story_text(example)
-        if text:
-            f.write(text + "\n\n")
-print(f"  → {test_path}")
-
 # ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
@@ -138,10 +119,9 @@ print("\nDone!")
 print("Files created:")
 for name in ("train", "val"):
     print(f"  {os.path.join(base_dir, f'{name}.bin')}")
-print(f"  {os.path.join(base_dir, 'test.txt')}")
 print(f"  {os.path.join(base_dir, 'meta.pkl')}")
 print()
 print("Usage reminder:")
-print("  train.bin + val.bin  →  use during model training")
-print("  test.txt             →  plain text stories for final evaluation after training")
-print("  meta.pkl             →  vocab_size + tokenizer info, read by nanoGPT at train time")
+print("  train.bin  →  full original train split, used during model training")
+print("  val.bin    →  full original test split, monitors loss")
+print("  meta.pkl   →  vocab_size + tokenizer info, read by nanoGPT at train time")

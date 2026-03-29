@@ -7,22 +7,22 @@
 # Output & Checkpointing
 # =============================================================================
 out_dir = 'out-rocstories'
-# init_from = 'resume'                # 'scratch' or 'resume' from out_dir checkpoint
-always_save_checkpoint = True       # save every checkpoint for quick runs
+init_from = 'resume'                # 'scratch' or 'resume' from out_dir checkpoint
+always_save_checkpoint = False       # save every checkpoint for quick runs
 
 # =============================================================================
 # Logging (Weights & Biases)
 # =============================================================================
 wandb_log = True
 wandb_project = 'rocstories'
-wandb_run_name = 'rocstories_new'
+wandb_run_name = 'rocstories_no_split_each_batch_start_with_beginning'
 
 dataset = 'rocstories'
 
 # =============================================================================
 # Architecture  (~19M params, under 32M limit)
 # =============================================================================
-block_size = 256    # larger = more context understanding, smaller = faster runs
+block_size = 128    # larger = more context understanding, smaller = faster runs
 n_layer = 6        # deeper model, better reasoning & complexity understanding
 n_head = 6         # more attention patterns = better perspectives
 n_embd = 384        # representation size (n_embd must be divisible by n_head)
@@ -31,8 +31,8 @@ bias = False
 # =============================================================================
 # Training Batch & Memory
 # =============================================================================
-batch_size = 32                     # effective batch = 64 * 4 = 256, stable training
-gradient_accumulation_steps = 4     # effective batch = 64 * 4 = 256, stable training
+batch_size = 16                     # effective batch = 64 * 4 = 256, stable training
+gradient_accumulation_steps = 8     # effective batch = 64 * 4 = 256, stable training
 dtype = 'bfloat16'
 device = 'cuda'
 compile = False
@@ -46,17 +46,17 @@ weight_decay = 0.2                  # regularization to reduce overfitting
 # =============================================================================
 # Learning Rate Schedule
 # =============================================================================
-learning_rate = 1e-4                # higher LR suits deeper model from scratch
-min_lr = 1e-5                       # 10% of learning_rate
+learning_rate = 9e-6                # higher LR suits deeper model from scratch
+min_lr = 9e-7                       # 10% of learning_rate
 warmup_iters = 400                  # stable warmup before full LR
 beta2 = 0.95                        # stable gradient accumulation
 
 # =============================================================================
 # Iteration & Evaluation
 # =============================================================================
-max_iters = 4000                    # total training iterations (adjust for quick runs)
-lr_decay_iters = 4000              # decay LR across full training run
-eval_interval = 400                 # evaluate every N iters
+max_iters = 12000                    # total training iterations (adjust for quick runs)
+lr_decay_iters = 12000               # decay LR across full training run
+eval_interval = 100                 # evaluate every N iters
 eval_iters = 400                    # iters to average for stable val loss estimate
 log_interval = 50
 grad_clip = 1.0                     # clip gradients to prevent exploding
