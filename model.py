@@ -26,14 +26,6 @@ class LayerNorm(nn.Module):
     def forward(self, input):
         return F.layer_norm(input, self.weight.shape, self.weight, self.bias, 1e-5)
 
-class LayerRMSNorm(nn.Module):
-    def __init__(self, ndim):
-        super().__init__()
-        self.weight = nn.Parameter(torch.ones(ndim))
-
-    def forward(self, input):
-        return F.rms_norm(input, self.weight.shape, self.weight, 1e-5)
-
 class CausalSelfAttention(nn.Module):
 
     def __init__(self, config):
@@ -103,11 +95,9 @@ class Block(nn.Module):
 
     def __init__(self, config):
         super().__init__()
-        # self.ln_1 = LayerNorm(config.n_embd, bias=config.bias)
-        self.ln_1 = LayerRMSNorm(config.n_embd)
+        self.ln_1 = LayerNorm(config.n_embd, bias=config.bias)
         self.attn = CausalSelfAttention(config)
-        # self.ln_2 = LayerNorm(config.n_embd, bias=config.bias)
-        self.ln_2 = LayerRMSNorm(config.n_embd)
+        self.ln_2 = LayerNorm(config.n_embd, bias=config.bias)
         self.mlp = MLP(config)
 
     def forward(self, x):
