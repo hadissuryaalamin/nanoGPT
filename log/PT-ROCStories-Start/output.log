@@ -1,0 +1,102 @@
+step 0: train loss 10.8881, val loss 10.8880
+iter 0: loss 10.9006, time 24550.41ms, mfu -100.00%
+iter 50: loss 9.8949, time 614.11ms, mfu 3.19%
+iter 100: loss 9.2300, time 622.22ms, mfu 3.19%
+iter 150: loss 8.3479, time 610.78ms, mfu 3.19%
+iter 200: loss 7.3537, time 620.90ms, mfu 3.19%
+iter 250: loss 6.4373, time 620.07ms, mfu 3.18%
+iter 300: loss 5.7913, time 615.30ms, mfu 3.18%
+iter 350: loss 5.4910, time 621.65ms, mfu 3.18%
+step 400: train loss 5.2041, val loss 5.2269
+saving checkpoint to out-rocstories
+iter 400: loss 5.3446, time 24316.43ms, mfu 2.87%
+iter 450: loss 5.1376, time 610.57ms, mfu 2.90%
+iter 500: loss 4.9177, time 612.63ms, mfu 2.93%
+iter 550: loss 4.8540, time 620.96ms, mfu 2.96%
+iter 600: loss 4.8214, time 617.87ms, mfu 2.98%
+iter 650: loss 4.7072, time 620.75ms, mfu 3.00%
+iter 700: loss 4.7082, time 619.51ms, mfu 3.01%
+iter 750: loss 4.7275, time 619.33ms, mfu 3.03%
+step 800: train loss 4.5308, val loss 4.5819
+saving checkpoint to out-rocstories
+iter 800: loss 4.5953, time 23455.89ms, mfu 2.73%
+iter 850: loss 4.6387, time 617.83ms, mfu 2.78%
+iter 900: loss 4.5309, time 612.43ms, mfu 2.82%
+iter 950: loss 4.4722, time 625.91ms, mfu 2.85%
+iter 1000: loss 4.5146, time 622.04ms, mfu 2.88%
+iter 1050: loss 4.6112, time 615.80ms, mfu 2.91%
+iter 1100: loss 4.4150, time 625.34ms, mfu 2.93%
+iter 1150: loss 4.3458, time 625.81ms, mfu 2.95%
+step 1200: train loss 4.2124, val loss 4.2720
+saving checkpoint to out-rocstories
+iter 1200: loss 4.4312, time 23616.70ms, mfu 2.67%
+iter 1250: loss 4.3417, time 616.05ms, mfu 2.72%
+iter 1300: loss 4.2797, time 607.38ms, mfu 2.77%
+iter 1350: loss 4.3470, time 618.63ms, mfu 2.81%
+iter 1400: loss 4.2586, time 619.99ms, mfu 2.84%
+iter 1450: loss 4.2255, time 653.48ms, mfu 2.86%
+iter 1500: loss 4.1837, time 651.17ms, mfu 2.87%
+iter 1550: loss 4.1070, time 659.23ms, mfu 2.88%
+step 1600: train loss 3.9883, val loss 4.0784
+saving checkpoint to out-rocstories
+iter 1600: loss 4.0827, time 25717.00ms, mfu 2.60%
+iter 1650: loss 4.0991, time 659.80ms, mfu 2.64%
+iter 1700: loss 4.1827, time 656.57ms, mfu 2.67%
+iter 1750: loss 4.0585, time 637.36ms, mfu 2.71%
+iter 1800: loss 3.9780, time 647.43ms, mfu 2.75%
+iter 1850: loss 4.0267, time 653.89ms, mfu 2.77%
+iter 1900: loss 3.9479, time 615.53ms, mfu 2.81%
+iter 1950: loss 3.9974, time 618.34ms, mfu 2.85%
+step 2000: train loss 3.8388, val loss 3.9347
+saving checkpoint to out-rocstories
+iter 2000: loss 3.9922, time 23532.93ms, mfu 2.57%
+iter 2050: loss 4.0166, time 609.37ms, mfu 2.64%
+iter 2100: loss 3.9725, time 621.15ms, mfu 2.69%
+iter 2150: loss 3.8588, time 614.54ms, mfu 2.74%
+iter 2200: loss 4.0419, time 619.42ms, mfu 2.78%
+iter 2250: loss 3.9254, time 616.86ms, mfu 2.82%
+iter 2300: loss 3.9372, time 616.10ms, mfu 2.86%
+iter 2350: loss 3.8377, time 620.43ms, mfu 2.89%
+step 2400: train loss 3.7336, val loss 3.8599
+saving checkpoint to out-rocstories
+iter 2400: loss 3.8187, time 25177.25ms, mfu 2.61%
+iter 2450: loss 3.8534, time 629.60ms, mfu 2.66%
+iter 2500: loss 3.7411, time 632.98ms, mfu 2.70%
+iter 2550: loss 3.8590, time 636.40ms, mfu 2.74%
+iter 2600: loss 3.7892, time 639.76ms, mfu 2.77%
+iter 2650: loss 3.7922, time 632.93ms, mfu 2.80%
+iter 2700: loss 3.7731, time 651.50ms, mfu 2.82%
+iter 2750: loss 3.8322, time 648.83ms, mfu 2.84%
+step 2800: train loss 3.6715, val loss 3.7941
+saving checkpoint to out-rocstories
+iter 2800: loss 3.8536, time 30483.18ms, mfu 2.57%
+iter 2850: loss 3.7701, time 778.89ms, mfu 2.56%
+iter 2900: loss 3.8159, time 779.43ms, mfu 2.56%
+iter 2950: loss 3.7563, time 780.33ms, mfu 2.55%
+iter 3000: loss 3.7299, time 787.42ms, mfu 2.55%
+iter 3050: loss 3.7984, time 774.73ms, mfu 2.54%
+iter 3100: loss 3.8262, time 783.96ms, mfu 2.54%
+iter 3150: loss 3.6689, time 784.88ms, mfu 2.54%
+step 3200: train loss 3.6262, val loss 3.7571
+saving checkpoint to out-rocstories
+iter 3200: loss 3.7358, time 29741.18ms, mfu 2.29%
+iter 3250: loss 3.6638, time 778.99ms, mfu 2.31%
+iter 3300: loss 3.6472, time 788.25ms, mfu 2.33%
+iter 3350: loss 3.7445, time 808.65ms, mfu 2.34%
+iter 3400: loss 3.8243, time 804.20ms, mfu 2.35%
+iter 3450: loss 3.6244, time 804.61ms, mfu 2.36%
+iter 3500: loss 3.8008, time 812.16ms, mfu 2.36%
+iter 3550: loss 3.8261, time 794.03ms, mfu 2.37%
+step 3600: train loss 3.5953, val loss 3.7350
+saving checkpoint to out-rocstories
+iter 3600: loss 3.7842, time 30021.55ms, mfu 2.14%
+iter 3650: loss 3.6560, time 798.48ms, mfu 2.17%
+iter 3700: loss 3.7430, time 798.34ms, mfu 2.20%
+iter 3750: loss 3.6916, time 806.47ms, mfu 2.22%
+iter 3800: loss 3.5855, time 816.34ms, mfu 2.24%
+iter 3850: loss 3.7379, time 807.04ms, mfu 2.26%
+iter 3900: loss 3.7456, time 815.86ms, mfu 2.27%
+iter 3950: loss 3.7825, time 803.40ms, mfu 2.29%
+step 4000: train loss 3.5746, val loss 3.7109
+saving checkpoint to out-rocstories
+iter 4000: loss 3.6778, time 30594.79ms, mfu 2.07%

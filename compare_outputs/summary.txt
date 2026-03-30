@@ -1,0 +1,176 @@
+MODEL COMPARISON SUMMARY
+Models  : FT_Discourse, FT_Tinystories, Final, PT_ROCStories
+Prompts : data/rocstories/eval_prompts.txt
+Samples : 1 per prompt per model
+MaxToks : 200
+================================================================================
+
+PROMPT: Emily forgot her umbrella before leaving for work.
+--------------------------------------------------------------------------------
+[FT_Discourse]
+  Emily forgot her umbrella before leaving for work. <|s2|> Rita was really
+  upset about the text. <|s3|> After receiving a text, Rita tried to find
+  her phone. <|s4|> The text was pretty bad and she decided to visit the
+  phone. <|s5|> Rita will be home and take it home to avoid text.
+
+[FT_Tinystories]
+  Emily forgot her umbrella before leaving for work. She wanted to go
+  outside to play in the garden but so she asked her Mommy if she could.
+  Mommy said no and said that she should get to her house. Emily was sad but
+  she still felt better. She closed the door and grabbed her umbrella. But
+  then she saw an empty pond. She didn't know what to do.  Emily said she
+  had to take the umbrella. She was a bit scared but she knew she couldn't.
+  She went outside and got her umbrella. She put it in the pond and ran back
+  inside.  Before long she was tired, Emily's mommy said she was wearing a
+  new umbrella. Emily was so happy. She hugged her mommy and said they would
+  come back outside for a fun ride.  Emily was so happy and excited to see
+  all her friends outside the park. She ran and ran, feeling so safe, she
+  forgot all about staying in the cozy pond.
+
+[Final]
+  Emily forgot her umbrella before leaving for work. She hurried to the car
+  to get to the store for a quick stop. When she got in, she realized she
+  hadn't used her umbrella. Emily was really upset. She had to throw her
+  umbrella out.
+
+[PT_ROCStories]
+  Emily forgot her umbrella before leaving for work. She hurried back to
+  work. While she was outside, she saw a homeless man. He held a punch and
+  asked if she was accepted. Emily took the man to the park.
+
+================================================================================
+
+PROMPT: Tom decided to cook dinner for his friends.
+--------------------------------------------------------------------------------
+[FT_Discourse]
+  Tom decided to cook dinner for his friends. <|s2|> He was just about to
+  finish cooking when he heard a loud pop. <|s3|> He panicked and ran for
+  cover. <|s4|> The smoke alarm went off. <|s5|> He called the police and
+  everyone was sentenced to prison.
+
+[FT_Tinystories]
+  Tom decided to cook dinner for his friends. He put on a big white paper,
+  some vegetables and some meat. He made a peanut paper for his friends, his
+  dog, and his dog. He put salt in the pot, and it was ready to cook.  But
+  when he went to show his friends, his dog, Max, accidentally spilled some
+  of the salt. He spilled the salt on his plate and the dog chased it away.
+  Tom felt bad and apologized to Max.  Spot forgave him and they ate the
+  soup together. They were happy and they all celebrated and had a fun time.
+
+[Final]
+  Tom decided to cook dinner for his friends. He decided to make it himself.
+  He got all the ingredients together. When he got the meat he found some
+  sauce. Tom loved it.
+
+[PT_ROCStories]
+  Tom decided to cook dinner for his friends. They all ordered a large
+  salad. They got the ingredients together. They all ate it and never had so
+  much food. Tom decided to make a salad for himself.
+
+================================================================================
+
+PROMPT: Lily wanted to start jogging every morning.
+--------------------------------------------------------------------------------
+[FT_Discourse]
+  Lily wanted to start jogging every morning. <|s2|> He was determined to be
+  healthy for his health. <|s3|> He started a jogging routine one morning.
+  <|s4|> He was able to jog everyday after a few months. <|s5|> Soon, he was
+  jogging pretty well.
+
+[FT_Tinystories]
+  Lily wanted to start jogging every morning. She put on her shoes and
+  shorts and said: "Ready jog!" She stretched her legs and ran as fast as
+  she could. She saw flowers, squirrels, and even a green slide and a big
+  dog that looked very pretty. She smiled at the dog and said: "Hi, look at
+  all the beautiful flowers and flowers!"  But then her mom called in for
+  lunch. Lily was hungry and she had to go to the bathroom. She got very
+  close to the bathroom and looked at her mom. "Mommy, look at my shoes! I
+  have something to eat!" she exclaimed.  Her mom was not happy. She said:
+  "Lily, you should not go to the bathroom. It's not good to waste your
+  shoes. You have to wash them off before you get away from the bathroom.
+  And don't forget to listen to me."  Lily didn't listen. She did not like
+  the taste of the puddles. She did not want
+
+[Final]
+  Lily wanted to start jogging every morning. She decided to start jogging
+  in her backyard. As she was walking, she tripped and fell. She had to call
+  her dad to come help her up. He wanted to help her and made her jog
+  without a bleeding.
+
+[PT_ROCStories]
+  Lily wanted to start jogging every morning. She decided to try jogging in
+  her backyard. But she was too busy to walk. Lily had to go an ache and
+  rest. Lily was happy to have a fresh jogging puddle.
+
+================================================================================
+
+PROMPT: Mark borrowed his sister’s bike for the afternoon.
+--------------------------------------------------------------------------------
+[FT_Discourse]
+  Mark borrowed his sister’s bike for the afternoon. <|s2|> He skipped on
+  the sidewalk and walked around the neighborhood. <|s3|> Billy stopped by
+  to pick upbee and walked around the block. <|s4|> A police officer stopped
+  and stopped Billy. <|s5|> Billy got a ticket for cheating on his sister.
+
+[FT_Tinystories]
+  Mark borrowed his sister’s bike for the afternoon. Mark was excited to
+  wear his new helmet. He rode it around the park, playing with it every
+  day. He was having so much fun.  Soon, Mark's dad came to him. He said,
+  â€œMark, you need to pay for your helmet?â€ Mark was excited and said,
+  â€œYes, Iâ€™m sorry. I'm sorry, dad.â€ But Mark felt a bit sad. He said,
+  â€œDonâ€™t worry, but I can be extra careful.â€ Mark took a deep breath,
+  turned on the pedal. He smiled and followed the pedal.  Mark looked around
+  and noticed a bench in the park. He was so excited! He sat down next to
+  the bench and started to ride. He rode the bike and rode around the park.
+  Mark watched as his mom watched him ride in the park. The sun was setting
+  and the ground was just the same
+
+[Final]
+  Mark borrowed his sister’s bike for the afternoon. Mark rode his bike to
+  the park. He took his car up the hill. Mark was able to bike back down the
+  hill. He was back on his bike ride home.
+
+[PT_ROCStories]
+  Mark borrowed his sister’s bike for the afternoon. Mark rode his bike to
+  the park on the trails. Mark rode the long bike, even when the bike was
+  moving. Mark soon realized that he forgot to tie his shoes. Mark felt bad
+  for telling his sister about his lost bike.
+
+================================================================================
+
+PROMPT: Anna planted tomato seeds in her backyard.
+--------------------------------------------------------------------------------
+[FT_Discourse]
+  Anna planted tomato seeds in her backyard. <|s2|> She planted seeds and
+  seeds. <|s3|> One day her neighbor suggested she plant a garden. <|s4|>
+  When she planted the seeds, she watered it every morning. <|s5|> Soon, she
+  had fresh produce and a garden!
+
+[FT_Tinystories]
+  Anna planted tomato seeds in her backyard. She watered them every morning
+  and watched them grow big and strong. She hoped they were growing and
+  strong.  One day, she saw a big white leaf on the ground. She wondered
+  what it was for. She crawled closer to take a bite. She saw another leaf,
+  a bush, a daisy, and a small brown one. She was very curious and wanted to
+  pick it.  But the purple leaf was too big for her. It was too small for
+  her. She ran back to her house and knocked on the door. The basket was
+  full of yellow flowers and flowers.  Anna knocked on the door and the
+  purple leaf flew out. She was surprised. She took a surprise inside the
+  house. It was a big, colorful butterfly with bright colors and colors. She
+  smiled and hugged the string. She gave it a big hug.  She ran inside to
+  show her mom the purple leaf. Her mom smiled and said, "Wow, what a pretty
+  leaf,
+
+[Final]
+  Anna planted tomato seeds in her backyard. She grew more and more sprouted
+  her seeds. Then she fed the seeds every day. Lee was happy with the
+  results of her seeds!
+
+[PT_ROCStories]
+  Anna planted tomato seeds in her backyard. She grew more and more tomatoes
+  than her plants! Then she fed the seeds every day. Lee added her fresh
+  tomatoes to help her plant! Anna and her neighbors grew but they grew
+  happy when they grew!
+
+================================================================================
+

@@ -1,0 +1,240 @@
+iter 37600: loss 4.7774, time 3964.01ms, mfu -100.00%
+iter 37650: loss 3.3601, time 2254.46ms, mfu 1.74%
+iter 37700: loss 3.1278, time 2246.59ms, mfu 1.74%
+iter 37750: loss 3.1351, time 1919.39ms, mfu 1.77%
+iter 37800: loss 2.7321, time 2100.66ms, mfu 1.78%
+iter 37850: loss 2.5755, time 3091.61ms, mfu 1.73%
+iter 37900: loss 2.4953, time 2989.09ms, mfu 1.69%
+iter 37950: loss 2.4899, time 2524.50ms, mfu 1.67%
+step 38000: train loss 2.3155, val loss 2.3054, val ppl 10.03
+saving checkpoint to out-tinystories-ft
+iter 38000: loss 2.4006, time 32404.60ms, mfu 1.52%
+iter 38050: loss 2.3780, time 2520.64ms, mfu 1.52%
+iter 38100: loss 2.3709, time 3006.47ms, mfu 1.50%
+iter 38150: loss 2.3796, time 2965.39ms, mfu 1.48%
+iter 38200: loss 2.2995, time 2861.85ms, mfu 1.47%
+iter 38250: loss 2.2498, time 2823.46ms, mfu 1.46%
+iter 38300: loss 2.2514, time 2932.15ms, mfu 1.45%
+iter 38350: loss 2.1964, time 3008.44ms, mfu 1.44%
+iter 38400: loss 2.2082, time 2905.41ms, mfu 1.43%
+iter 38450: loss 2.1727, time 2853.20ms, mfu 1.42%
+step 38500: train loss 2.1310, val loss 2.1107, val ppl 8.25
+saving checkpoint to out-tinystories-ft
+iter 38500: loss 2.2572, time 38239.18ms, mfu 1.29%
+iter 38550: loss 2.1578, time 2873.39ms, mfu 1.30%
+iter 38600: loss 2.1406, time 2911.66ms, mfu 1.30%
+iter 38650: loss 2.1750, time 2835.86ms, mfu 1.31%
+iter 38700: loss 2.0387, time 2801.07ms, mfu 1.32%
+iter 38750: loss 2.0281, time 2841.47ms, mfu 1.32%
+iter 38800: loss 2.1318, time 2827.37ms, mfu 1.33%
+iter 38850: loss 2.2111, time 2989.35ms, mfu 1.33%
+iter 38900: loss 2.1691, time 2931.55ms, mfu 1.33%
+iter 38950: loss 2.1326, time 2824.34ms, mfu 1.34%
+step 39000: train loss 2.0444, val loss 2.0374, val ppl 7.67
+saving checkpoint to out-tinystories-ft
+iter 39000: loss 2.1239, time 47007.64ms, mfu 1.21%
+iter 39050: loss 2.0242, time 4304.54ms, mfu 1.18%
+iter 39100: loss 2.0490, time 4315.54ms, mfu 1.15%
+iter 39150: loss 2.1881, time 2639.89ms, mfu 1.19%
+iter 39200: loss 2.2122, time 2568.48ms, mfu 1.22%
+iter 39250: loss 2.2347, time 2516.93ms, mfu 1.25%
+iter 39300: loss 2.0782, time 2462.25ms, mfu 1.29%
+iter 39350: loss 2.1376, time 2714.39ms, mfu 1.30%
+iter 39400: loss 2.0228, time 2580.96ms, mfu 1.32%
+iter 39450: loss 2.1704, time 2577.51ms, mfu 1.34%
+step 39500: train loss 1.9877, val loss 1.9748, val ppl 7.21
+saving checkpoint to out-tinystories-ft
+iter 39500: loss 2.1327, time 29751.27ms, mfu 1.22%
+iter 39550: loss 2.2375, time 2662.08ms, mfu 1.25%
+iter 39600: loss 2.0015, time 2837.63ms, mfu 1.26%
+iter 39650: loss 2.1420, time 2609.99ms, mfu 1.29%
+iter 39700: loss 1.9851, time 2579.93ms, mfu 1.31%
+iter 39750: loss 2.0079, time 2518.54ms, mfu 1.33%
+iter 39800: loss 2.2231, time 2749.10ms, mfu 1.34%
+iter 39850: loss 1.9379, time 2800.44ms, mfu 1.35%
+iter 39900: loss 2.1841, time 2648.62ms, mfu 1.36%
+iter 39950: loss 1.9882, time 2523.97ms, mfu 1.38%
+step 40000: train loss 1.9505, val loss 1.9520, val ppl 7.04
+saving checkpoint to out-tinystories-ft
+iter 40000: loss 2.0170, time 29590.57ms, mfu 1.26%
+iter 40050: loss 2.0075, time 2562.46ms, mfu 1.28%
+iter 40100: loss 1.9859, time 2714.10ms, mfu 1.30%
+iter 40150: loss 2.0816, time 2509.56ms, mfu 1.33%
+iter 40200: loss 1.9622, time 2579.27ms, mfu 1.35%
+iter 40250: loss 1.9901, time 2663.25ms, mfu 1.36%
+iter 40300: loss 2.1065, time 2589.60ms, mfu 1.37%
+iter 40350: loss 2.0868, time 2708.98ms, mfu 1.38%
+iter 40400: loss 2.0196, time 2646.95ms, mfu 1.39%
+iter 40450: loss 2.0656, time 2515.34ms, mfu 1.41%
+step 40500: train loss 1.9182, val loss 1.9143, val ppl 6.78
+saving checkpoint to out-tinystories-ft
+iter 40500: loss 2.0547, time 30057.17ms, mfu 1.28%
+iter 40550: loss 2.1766, time 2507.27ms, mfu 1.31%
+iter 40600: loss 2.0443, time 2674.89ms, mfu 1.32%
+iter 40650: loss 1.9597, time 2519.23ms, mfu 1.35%
+iter 40700: loss 2.0756, time 2588.43ms, mfu 1.36%
+iter 40750: loss 2.0759, time 2601.05ms, mfu 1.38%
+iter 40800: loss 2.0125, time 2610.02ms, mfu 1.39%
+iter 40850: loss 2.0556, time 2529.37ms, mfu 1.41%
+iter 40900: loss 1.9328, time 2841.53ms, mfu 1.40%
+iter 40950: loss 2.0537, time 2671.92ms, mfu 1.41%
+step 41000: train loss 1.8896, val loss 1.8973, val ppl 6.67
+saving checkpoint to out-tinystories-ft
+iter 41000: loss 1.8461, time 30553.51ms, mfu 1.28%
+iter 41050: loss 1.9426, time 2782.07ms, mfu 1.29%
+iter 41100: loss 1.8782, time 2768.05ms, mfu 1.31%
+iter 41150: loss 1.9399, time 2823.03ms, mfu 1.31%
+iter 41200: loss 1.9933, time 3180.56ms, mfu 1.31%
+iter 41250: loss 1.9004, time 2864.61ms, mfu 1.31%
+iter 41300: loss 2.0757, time 2842.98ms, mfu 1.32%
+iter 41350: loss 1.9897, time 2780.99ms, mfu 1.33%
+iter 41400: loss 2.0615, time 2798.01ms, mfu 1.34%
+iter 41450: loss 2.0340, time 3025.69ms, mfu 1.33%
+step 41500: train loss 1.8775, val loss 1.8779, val ppl 6.54
+saving checkpoint to out-tinystories-ft
+iter 41500: loss 1.9398, time 38365.18ms, mfu 1.21%
+iter 41550: loss 2.0074, time 2991.35ms, mfu 1.22%
+iter 41600: loss 2.0928, time 2851.08ms, mfu 1.23%
+iter 41650: loss 1.9339, time 2910.82ms, mfu 1.25%
+iter 41700: loss 1.9844, time 3201.71ms, mfu 1.24%
+iter 41750: loss 1.8464, time 2834.00ms, mfu 1.26%
+iter 41800: loss 1.9985, time 2861.34ms, mfu 1.27%
+iter 41850: loss 1.9353, time 2849.46ms, mfu 1.28%
+iter 41900: loss 1.9045, time 2899.29ms, mfu 1.29%
+iter 41950: loss 2.0196, time 2982.89ms, mfu 1.29%
+step 42000: train loss 1.8637, val loss 1.8538, val ppl 6.38
+saving checkpoint to out-tinystories-ft
+iter 42000: loss 1.9919, time 57845.35ms, mfu 1.17%
+iter 42050: loss 1.9244, time 4502.88ms, mfu 1.14%
+iter 42100: loss 1.9620, time 2573.50ms, mfu 1.18%
+iter 42150: loss 1.9184, time 2500.88ms, mfu 1.22%
+iter 42200: loss 1.9456, time 2601.27ms, mfu 1.24%
+iter 42250: loss 1.9406, time 2674.91ms, mfu 1.27%
+iter 42300: loss 2.0946, time 2614.06ms, mfu 1.29%
+iter 42350: loss 1.9441, time 2779.07ms, mfu 1.30%
+iter 42400: loss 1.9217, time 2642.17ms, mfu 1.32%
+iter 42450: loss 2.0743, time 2685.29ms, mfu 1.33%
+step 42500: train loss 1.8543, val loss 1.8543, val ppl 6.39
+iter 42500: loss 1.9396, time 30420.95ms, mfu 1.21%
+iter 42550: loss 1.9190, time 2571.92ms, mfu 1.24%
+iter 42600: loss 1.8304, time 2627.92ms, mfu 1.27%
+iter 42650: loss 1.9702, time 2664.37ms, mfu 1.29%
+iter 42700: loss 1.9313, time 2594.78ms, mfu 1.31%
+iter 42750: loss 1.8349, time 2562.17ms, mfu 1.33%
+iter 42800: loss 2.0192, time 2488.46ms, mfu 1.36%
+iter 42850: loss 1.9382, time 2635.22ms, mfu 1.37%
+iter 42900: loss 1.8952, time 2661.60ms, mfu 1.38%
+iter 42950: loss 2.0293, time 2613.14ms, mfu 1.39%
+step 43000: train loss 1.8294, val loss 1.8281, val ppl 6.22
+saving checkpoint to out-tinystories-ft
+iter 43000: loss 1.9122, time 31715.37ms, mfu 1.27%
+iter 43050: loss 1.8624, time 2652.58ms, mfu 1.29%
+iter 43100: loss 1.8305, time 2589.96ms, mfu 1.31%
+iter 43150: loss 1.8859, time 2531.40ms, mfu 1.33%
+iter 43200: loss 1.8785, time 2532.04ms, mfu 1.35%
+iter 43250: loss 2.0095, time 2697.16ms, mfu 1.36%
+iter 43300: loss 1.8981, time 2602.70ms, mfu 1.38%
+iter 43350: loss 1.9743, time 2809.26ms, mfu 1.38%
+iter 43400: loss 2.0179, time 2612.72ms, mfu 1.39%
+iter 43450: loss 2.0292, time 2639.98ms, mfu 1.40%
+step 43500: train loss 1.8211, val loss 1.8120, val ppl 6.12
+saving checkpoint to out-tinystories-ft
+iter 43500: loss 2.0045, time 30398.38ms, mfu 1.27%
+iter 43550: loss 1.9352, time 2597.43ms, mfu 1.30%
+iter 43600: loss 1.8451, time 2726.57ms, mfu 1.31%
+iter 43650: loss 1.9986, time 2555.97ms, mfu 1.33%
+iter 43700: loss 1.8124, time 2711.98ms, mfu 1.35%
+iter 43750: loss 1.9019, time 2681.81ms, mfu 1.36%
+iter 43800: loss 1.9274, time 2591.67ms, mfu 1.37%
+iter 43850: loss 1.9613, time 2512.54ms, mfu 1.39%
+iter 43900: loss 1.9783, time 2668.62ms, mfu 1.40%
+iter 43950: loss 1.8828, time 2562.81ms, mfu 1.41%
+step 44000: train loss 1.8098, val loss 1.8084, val ppl 6.10
+saving checkpoint to out-tinystories-ft
+iter 44000: loss 1.9216, time 37955.15ms, mfu 1.28%
+iter 44050: loss 1.9892, time 2970.75ms, mfu 1.28%
+iter 44100: loss 1.9211, time 2858.27ms, mfu 1.29%
+iter 44150: loss 1.7678, time 3111.47ms, mfu 1.29%
+iter 44200: loss 1.9198, time 2850.18ms, mfu 1.30%
+iter 44250: loss 1.8457, time 2819.37ms, mfu 1.31%
+iter 44300: loss 1.9532, time 2806.62ms, mfu 1.32%
+iter 44350: loss 1.8937, time 2929.59ms, mfu 1.32%
+iter 44400: loss 1.9159, time 2996.00ms, mfu 1.32%
+iter 44450: loss 1.8801, time 2956.42ms, mfu 1.32%
+step 44500: train loss 1.8084, val loss 1.7926, val ppl 6.00
+saving checkpoint to out-tinystories-ft
+iter 44500: loss 1.9373, time 39356.41ms, mfu 1.20%
+iter 44550: loss 1.8754, time 2911.77ms, mfu 1.21%
+iter 44600: loss 1.9453, time 2986.70ms, mfu 1.22%
+iter 44650: loss 1.9452, time 3075.85ms, mfu 1.23%
+iter 44700: loss 1.8498, time 2847.67ms, mfu 1.24%
+iter 44750: loss 1.8780, time 2789.13ms, mfu 1.26%
+iter 44800: loss 1.8970, time 2898.97ms, mfu 1.27%
+iter 44850: loss 1.8484, time 2855.97ms, mfu 1.28%
+iter 44900: loss 1.8781, time 2900.70ms, mfu 1.29%
+iter 44950: loss 1.8494, time 4193.00ms, mfu 1.25%
+step 45000: train loss 1.7974, val loss 1.7903, val ppl 5.99
+saving checkpoint to out-tinystories-ft
+iter 45000: loss 1.8754, time 56733.42ms, mfu 1.13%
+iter 45050: loss 1.8298, time 2595.33ms, mfu 1.17%
+iter 45100: loss 1.9287, time 2521.47ms, mfu 1.21%
+iter 45150: loss 1.9241, time 2517.00ms, mfu 1.24%
+iter 45200: loss 1.9053, time 2522.85ms, mfu 1.27%
+iter 45250: loss 1.8884, time 2648.66ms, mfu 1.29%
+iter 45300: loss 1.9195, time 2595.17ms, mfu 1.32%
+iter 45350: loss 1.9006, time 2682.68ms, mfu 1.33%
+iter 45400: loss 1.8136, time 2770.81ms, mfu 1.34%
+iter 45450: loss 1.8720, time 2648.77ms, mfu 1.35%
+step 45500: train loss 1.7846, val loss 1.7888, val ppl 5.98
+saving checkpoint to out-tinystories-ft
+iter 45500: loss 1.9455, time 30614.35ms, mfu 1.23%
+iter 45550: loss 1.9951, time 2633.58ms, mfu 1.26%
+iter 45600: loss 1.8998, time 2743.10ms, mfu 1.27%
+iter 45650: loss 1.7813, time 2574.57ms, mfu 1.30%
+iter 45700: loss 1.8799, time 2520.16ms, mfu 1.32%
+iter 45750: loss 1.8641, time 2529.56ms, mfu 1.35%
+iter 45800: loss 1.9661, time 2641.56ms, mfu 1.36%
+iter 45850: loss 1.9311, time 2293.14ms, mfu 1.40%
+iter 45900: loss 1.9283, time 2235.30ms, mfu 1.43%
+iter 45950: loss 1.9185, time 2610.06ms, mfu 1.44%
+step 46000: train loss 1.7840, val loss 1.7692, val ppl 5.87
+saving checkpoint to out-tinystories-ft
+iter 46000: loss 1.8749, time 31007.24ms, mfu 1.31%
+iter 46050: loss 1.7910, time 2466.51ms, mfu 1.34%
+iter 46100: loss 1.8071, time 2650.22ms, mfu 1.35%
+iter 46150: loss 1.8053, time 2582.70ms, mfu 1.37%
+iter 46200: loss 1.7579, time 2603.97ms, mfu 1.38%
+iter 46250: loss 1.8225, time 2518.88ms, mfu 1.40%
+iter 46300: loss 1.9932, time 2551.36ms, mfu 1.41%
+iter 46350: loss 1.8244, time 2616.74ms, mfu 1.42%
+iter 46400: loss 1.8316, time 2775.28ms, mfu 1.42%
+iter 46450: loss 1.9959, time 2602.48ms, mfu 1.43%
+step 46500: train loss 1.7728, val loss 1.7659, val ppl 5.85
+saving checkpoint to out-tinystories-ft
+iter 46500: loss 1.9702, time 30428.52ms, mfu 1.30%
+iter 46550: loss 1.8612, time 2581.50ms, mfu 1.32%
+iter 46600: loss 1.8905, time 2495.09ms, mfu 1.35%
+iter 46650: loss 1.8394, time 2723.99ms, mfu 1.35%
+iter 46700: loss 1.7999, time 2500.93ms, mfu 1.38%
+iter 46750: loss 1.9495, time 2545.37ms, mfu 1.39%
+iter 46800: loss 1.7879, time 2623.22ms, mfu 1.40%
+iter 46850: loss 1.9835, time 2626.32ms, mfu 1.41%
+iter 46900: loss 1.9063, time 2709.85ms, mfu 1.42%
+iter 46950: loss 1.8076, time 2844.03ms, mfu 1.41%
+step 47000: train loss 1.7657, val loss 1.7623, val ppl 5.83
+saving checkpoint to out-tinystories-ft
+iter 47000: loss 1.8113, time 37960.05ms, mfu 1.28%
+iter 47050: loss 1.7968, time 2811.58ms, mfu 1.29%
+iter 47100: loss 1.8700, time 2815.08ms, mfu 1.30%
+iter 47150: loss 1.8873, time 2812.63ms, mfu 1.31%
+iter 47200: loss 1.9237, time 2819.79ms, mfu 1.32%
+iter 47250: loss 1.8294, time 2925.00ms, mfu 1.32%
+iter 47300: loss 1.9310, time 2881.44ms, mfu 1.33%
+iter 47350: loss 2.0063, time 2982.73ms, mfu 1.32%
+iter 47400: loss 1.8639, time 2828.37ms, mfu 1.33%
+iter 47450: loss 1.8409, time 2910.42ms, mfu 1.33%
+step 47500: train loss 1.7714, val loss 1.7611, val ppl 5.82
+saving checkpoint to out-tinystories-ft
+iter 47500: loss 1.7818, time 37940.45ms, mfu 1.21%
+iter 47550: loss 1.8142, time 2810.69ms, mfu 1.23%
+iter 47600: loss 1.7688, time 2884.17ms, mfu 1.24%

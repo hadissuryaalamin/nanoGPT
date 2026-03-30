@@ -35,15 +35,16 @@ dataset = 'tinystories'             # -> data/tinystories/train.bin & val.bin
 
 # -----------------------------------------------------------------------------
 # Architecture — loaded from checkpoint, listed here for reference only
-# n_layer=6, n_head=6, n_embd=384, block_size=256, bias=False, vocab_size=50257
+# n_layer=6, n_head=6, n_embd=384, bias=False, vocab_size=50257
+block_size = 256  # must match checkpoint — also controls data loader sequence length
 # -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
 # Training
 # -----------------------------------------------------------------------------
 batch_size                  = 32
-gradient_accumulation_steps = 4     # effective batch = 128 seqs x 256 tokens = 32,768 tokens/iter
-dtype                       = 'bfloat16'
+gradient_accumulation_steps = 8     # effective batch = 128 seqs x 256 tokens = 32,768 tokens/iter
+dtype                       = 'float16'  # use float16 for faster training and lower memory usage
 device                      = 'cuda'
 compile                     = False
 
@@ -76,8 +77,8 @@ grad_clip      = 1.0
 # Check iter_num by running:
 #   python -c "import torch; ck=torch.load('out-rocstories/25_62.pt'); print(ck['iter_num'])"
 # -----------------------------------------------------------------------------
-max_iters       = 32000             # adjust: checkpoint_iter_num + 20000
-lr_decay_iters  = 32000
+max_iters       = 47600             # adjust: checkpoint_iter_num + 20000
+lr_decay_iters  = 47600
 eval_interval   = 500
 eval_iters      = 200
 log_interval    = 50

@@ -150,11 +150,8 @@ if load_meta:
     print(f"Loading meta from {meta_path}...")
     with open(meta_path, 'rb') as f:
         meta = pickle.load(f)
-    # stoi = meta['stoi']
-    # encode = lambda s: [stoi[c] for c in s]
-    # Bcs tokenizer is GPT-2, we can just use tiktoken with the vocab size from meta
-    enc = tiktoken.get_encoding("gpt2")
-    encode = lambda s: enc.encode(s, allowed_special={"<|endoftext|>"})
+    stoi = meta['stoi']
+    encode = lambda s: [stoi[c] for c in s]
 else:
     print("No meta.pkl found, assuming GPT-2 encodings...")
     enc = tiktoken.get_encoding("gpt2")

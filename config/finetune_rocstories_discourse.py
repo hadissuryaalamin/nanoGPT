@@ -25,7 +25,7 @@
 # -----------------------------------------------------------------------------
 out_dir   = 'out-rocstories-discourse'
 init_from = 'resume'                # loads out-rocstories-discourse/ckpt.pt
-always_save_checkpoint = False      # only save when val loss improves
+always_save_checkpoint = True      # only save when val loss improves
 
 # -----------------------------------------------------------------------------
 # Logging
@@ -42,6 +42,7 @@ dataset = 'rocstories_discourse'    # -> data/rocstories_discourse/train.bin & v
 # -----------------------------------------------------------------------------
 # Architecture — loaded from checkpoint, listed here for reference only
 # n_layer=6, n_head=6, n_embd=384, block_size=256, bias=False, vocab_size=50257
+block_size = 256
 # -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
@@ -82,8 +83,8 @@ grad_clip      = 1.0
 # Check with:
 #   python -c "import torch; ck=torch.load('out-tinystories-ft/ckpt_best.pt'); print(ck['iter_num'])"
 # -----------------------------------------------------------------------------
-max_iters       = 40000             # adjust: stage1_iter_num + 5000
-lr_decay_iters  = 40000
+max_iters       = 52500             # adjust: stage1_iter_num + 5000
+lr_decay_iters  = 52500
 eval_interval   = 250
 eval_iters      = 100
 log_interval    = 25

@@ -17,6 +17,8 @@ $ torchrun --nproc_per_node=8 --nnodes=2 --node_rank=1 --master_addr=123.456.123
 """
 
 import os
+import re
+import subprocess
 import time
 import math
 import pickle
@@ -38,6 +40,7 @@ log_interval = 1
 eval_iters = 200
 eval_only = False # if True, script exits right after the first eval
 always_save_checkpoint = True # if True, always save a checkpoint after each eval
+eval_input_file = '' # if set, run eval.py after each checkpoint save and track best PPL
 init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
 # wandb logging
 wandb_log = False # disabled by default
@@ -300,6 +303,40 @@ while True:
                 }
                 print(f"saving checkpoint to {out_dir}")
                 torch.save(checkpoint, os.path.join(out_dir, 'ckpt.pt'))
+                if master_process and eval_input_file:
+                    eval_cmd = [
+                        'python', 'eval.py',
+                        f'--init_from=resume',
+                        f'--out_dir={out_dir}',
+                        f'--input_file={eval_input_file}',
+                        '--device=' + device,
+                    ]
+                    print(f"running eval: {' '.join(eval_cmd)}")
+                    result = subprocess.run(eval_cmd, capture_output=True, text=True)
+                    print(result.stdout)
+                    if result.returncode != 0:
+                        print(f"eval.py error:\n{result.stderr}")
+                    else:
+                        m = re.search(r'ppl\s*:\s*([\d.]+)', result.stdout)
+                        if m:
+                            eval_ppl = float(m.group(1))
+                            best_ppl_path = os.path.join(out_dir, 'ckpt_best.pt')
+                            best_ppl_file = os.path.join(out_dir, 'best_ppl.txt')
+                            prev_best = float('inf')
+                            if os.path.exists(best_ppl_file):
+                                with open(best_ppl_file, 'r') as _f:
+                                    try:
+                                        prev_best = float(_f.read().strip())
+                                    except ValueError:
+                                        pass
+                            if eval_ppl < prev_best:
+                                import shutil
+                                shutil.copy2(os.path.join(out_dir, 'ckpt.pt'), best_ppl_path)
+                                with open(best_ppl_file, 'w') as _f:
+                                    _f.write(str(eval_ppl))
+                                print(f"new best PPL {eval_ppl:.2f} (prev {prev_best:.2f}) -> saved ckpt_best.pt")
+                            else:
+                                print(f"eval PPL {eval_ppl:.2f} (best so far {prev_best:.2f})")
     if iter_num == 0 and eval_only:
         break
 

@@ -1,0 +1,1133 @@
+step 52600: train loss 2.4721, val loss 3.2672, val ppl 26.24
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.288
+ppl             : 26.79
+
+new best PPL 26.79 (prev inf) -> saved ckpt_best.pt
+iter 52600: loss 2.7110, time 75633.13ms, mfu -100.00%
+iter 52625: loss 2.6554, time 573.48ms, mfu 1.71%
+iter 52650: loss 2.7084, time 20.62ms, mfu 6.29%
+iter 52675: loss 2.6642, time 439.61ms, mfu 5.88%
+iter 52700: loss 2.6361, time 161.44ms, mfu 5.90%
+iter 52725: loss 2.6255, time 181.64ms, mfu 5.85%
+iter 52750: loss 2.6052, time 19.74ms, mfu 10.23%
+iter 52775: loss 2.6136, time 188.37ms, mfu 9.73%
+step 52800: train loss 2.4517, val loss 3.2240, val ppl 25.13
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.258
+ppl             : 26.00
+
+new best PPL 26.00 (prev 26.79) -> saved ckpt_best.pt
+iter 52800: loss 2.6867, time 75295.71ms, mfu 8.76%
+iter 52825: loss 2.6443, time 439.85ms, mfu 8.10%
+iter 52850: loss 2.6619, time 26.18ms, mfu 11.04%
+iter 52875: loss 2.6446, time 21.96ms, mfu 14.40%
+iter 52900: loss 2.7001, time 18.56ms, mfu 18.24%
+iter 52925: loss 2.5911, time 20.40ms, mfu 21.21%
+iter 52950: loss 2.6533, time 172.73ms, mfu 19.66%
+iter 52975: loss 2.6208, time 232.79ms, mfu 18.12%
+step 53000: train loss 2.4470, val loss 3.2254, val ppl 25.16
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.248
+ppl             : 25.75
+
+new best PPL 25.75 (prev 26.00) -> saved ckpt_best.pt
+iter 53000: loss 2.5975, time 75673.23ms, mfu 16.31%
+iter 53025: loss 2.6492, time 455.61ms, mfu 14.89%
+iter 53050: loss 2.6938, time 327.65ms, mfu 13.70%
+iter 53075: loss 2.6085, time 20.05ms, mfu 17.22%
+iter 53100: loss 2.5887, time 297.53ms, mfu 15.82%
+iter 53125: loss 2.5405, time 215.61ms, mfu 14.70%
+iter 53150: loss 2.6595, time 500.23ms, mfu 13.42%
+iter 53175: loss 2.6683, time 440.60ms, mfu 12.30%
+step 53200: train loss 2.4279, val loss 3.2231, val ppl 25.11
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.244
+ppl             : 25.64
+
+new best PPL 25.64 (prev 25.75) -> saved ckpt_best.pt
+iter 53200: loss 2.6996, time 75809.94ms, mfu 11.07%
+iter 53225: loss 2.5656, time 164.16ms, mfu 10.56%
+iter 53250: loss 2.6476, time 318.10ms, mfu 9.81%
+iter 53275: loss 2.6406, time 29.83ms, mfu 12.12%
+iter 53300: loss 2.6396, time 485.64ms, mfu 11.11%
+iter 53325: loss 2.5967, time 231.85ms, mfu 10.42%
+iter 53350: loss 2.6486, time 173.82ms, mfu 9.94%
+iter 53375: loss 2.6640, time 387.07ms, mfu 9.20%
+step 53400: train loss 2.4305, val loss 3.2132, val ppl 24.86
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.239
+ppl             : 25.52
+
+new best PPL 25.52 (prev 25.64) -> saved ckpt_best.pt
+iter 53400: loss 2.6438, time 81098.98ms, mfu 8.28%
+iter 53425: loss 2.5298, time 203.88ms, mfu 7.93%
+iter 53450: loss 2.6136, time 516.45ms, mfu 7.33%
+iter 53475: loss 2.6418, time 330.32ms, mfu 6.89%
+iter 53500: loss 2.6153, time 201.63ms, mfu 6.69%
+iter 53525: loss 2.5930, time 206.06ms, mfu 6.50%
+iter 53550: loss 2.6686, time 226.15ms, mfu 6.28%
+iter 53575: loss 2.6305, time 459.74ms, mfu 5.87%
+step 53600: train loss 2.4296, val loss 3.2236, val ppl 25.12
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.238
+ppl             : 25.49
+
+new best PPL 25.49 (prev 25.52) -> saved ckpt_best.pt
+iter 53600: loss 2.5929, time 81438.86ms, mfu 5.28%
+iter 53625: loss 2.5452, time 374.06ms, mfu 5.01%
+iter 53650: loss 2.6629, time 541.94ms, mfu 4.69%
+iter 53675: loss 2.6132, time 102.03ms, mfu 5.18%
+iter 53700: loss 2.5608, time 347.31ms, mfu 4.95%
+iter 53725: loss 2.6525, time 290.76ms, mfu 4.79%
+iter 53750: loss 2.6390, time 183.86ms, mfu 4.84%
+iter 53775: loss 2.7215, time 350.22ms, mfu 4.64%
+step 53800: train loss 2.4204, val loss 3.2101, val ppl 24.78
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.235
+ppl             : 25.40
+
+new best PPL 25.40 (prev 25.49) -> saved ckpt_best.pt
+iter 53800: loss 2.5174, time 88229.72ms, mfu 4.18%
+iter 53825: loss 2.6050, time 396.34ms, mfu 4.01%
+iter 53850: loss 2.6686, time 389.50ms, mfu 3.86%
+iter 53875: loss 2.6299, time 408.83ms, mfu 3.71%
+iter 53900: loss 2.5695, time 394.05ms, mfu 3.59%
+iter 53925: loss 2.6300, time 395.08ms, mfu 3.48%
+iter 53950: loss 2.5841, time 390.90ms, mfu 3.38%
+iter 53975: loss 2.6634, time 387.56ms, mfu 3.30%
+step 54000: train loss 2.4142, val loss 3.2080, val ppl 24.73
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.234
+ppl             : 25.39
+
+new best PPL 25.39 (prev 25.40) -> saved ckpt_best.pt
+iter 54000: loss 2.5470, time 82574.36ms, mfu 2.97%
+iter 54025: loss 2.6498, time 402.01ms, mfu 2.91%
+iter 54050: loss 2.6092, time 383.00ms, mfu 2.88%
+iter 54075: loss 2.6004, time 396.43ms, mfu 2.84%
+iter 54100: loss 2.5995, time 395.00ms, mfu 2.80%
+iter 54125: loss 2.6176, time 384.14ms, mfu 2.78%
+iter 54150: loss 2.5955, time 386.05ms, mfu 2.75%
+iter 54175: loss 2.6391, time 393.28ms, mfu 2.73%
+step 54200: train loss 2.4057, val loss 3.2172, val ppl 24.96
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.234
+ppl             : 25.37
+
+new best PPL 25.37 (prev 25.39) -> saved ckpt_best.pt
+iter 54200: loss 2.5743, time 83592.41ms, mfu 2.46%
+iter 54225: loss 2.6497, time 393.30ms, mfu 2.46%
+iter 54250: loss 2.6571, time 392.58ms, mfu 2.46%
+iter 54275: loss 2.6861, time 388.86ms, mfu 2.47%
+iter 54300: loss 2.6423, time 395.05ms, mfu 2.47%
+iter 54325: loss 2.6240, time 389.67ms, mfu 2.47%
+iter 54350: loss 2.5466, time 394.13ms, mfu 2.48%
+iter 54375: loss 2.6527, time 399.72ms, mfu 2.47%
+step 54400: train loss 2.4075, val loss 3.2125, val ppl 24.84
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.232
+ppl             : 25.32
+
+new best PPL 25.32 (prev 25.37) -> saved ckpt_best.pt
+iter 54400: loss 2.6244, time 85685.00ms, mfu 2.23%
+iter 54425: loss 2.6406, time 379.53ms, mfu 2.26%
+iter 54450: loss 2.5979, time 411.94ms, mfu 2.27%
+iter 54475: loss 2.5982, time 397.44ms, mfu 2.29%
+iter 54500: loss 2.5347, time 393.76ms, mfu 2.31%
+iter 54525: loss 2.5217, time 402.65ms, mfu 2.32%
+iter 54550: loss 2.5978, time 403.49ms, mfu 2.34%
+iter 54575: loss 2.5498, time 379.39ms, mfu 2.36%
+step 54600: train loss 2.4015, val loss 3.2128, val ppl 24.85
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.231
+ppl             : 25.30
+
+new best PPL 25.30 (prev 25.32) -> saved ckpt_best.pt
+iter 54600: loss 2.6168, time 85287.39ms, mfu 2.13%
+iter 54625: loss 2.6395, time 403.89ms, mfu 2.16%
+iter 54650: loss 2.5659, time 403.21ms, mfu 2.18%
+iter 54675: loss 2.5833, time 412.08ms, mfu 2.20%
+iter 54700: loss 2.6255, time 496.73ms, mfu 2.18%
+iter 54725: loss 2.6491, time 403.28ms, mfu 2.20%
+iter 54750: loss 2.5759, time 398.88ms, mfu 2.23%
+iter 54775: loss 2.5828, time 410.97ms, mfu 2.25%
+step 54800: train loss 2.3926, val loss 3.2102, val ppl 24.78
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.230
+ppl             : 25.28
+
+new best PPL 25.28 (prev 25.30) -> saved ckpt_best.pt
+iter 54800: loss 2.5859, time 85738.54ms, mfu 2.02%
+iter 54825: loss 2.5363, time 555.10ms, mfu 2.00%
+iter 54850: loss 2.5860, time 382.29ms, mfu 2.05%
+iter 54875: loss 2.6222, time 389.58ms, mfu 2.10%
+iter 54900: loss 2.6853, time 397.97ms, mfu 2.14%
+iter 54925: loss 2.6163, time 391.21ms, mfu 2.17%
+iter 54950: loss 2.6009, time 399.54ms, mfu 2.20%
+iter 54975: loss 2.4864, time 405.22ms, mfu 2.22%
+step 55000: train loss 2.3916, val loss 3.2079, val ppl 24.73
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.229
+ppl             : 25.24
+
+new best PPL 25.24 (prev 25.28) -> saved ckpt_best.pt
+iter 55000: loss 2.6251, time 86049.10ms, mfu 2.00%
+iter 55025: loss 2.6527, time 409.82ms, mfu 2.04%
+iter 55050: loss 2.6017, time 421.96ms, mfu 2.07%
+iter 55075: loss 2.6021, time 423.95ms, mfu 2.09%
+iter 55100: loss 2.5205, time 403.25ms, mfu 2.13%
+iter 55125: loss 2.5451, time 398.24ms, mfu 2.16%
+iter 55150: loss 2.5995, time 384.47ms, mfu 2.20%
+iter 55175: loss 2.6289, time 367.10ms, mfu 2.25%
+step 55200: train loss 2.3927, val loss 3.2058, val ppl 24.68
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.228
+ppl             : 25.23
+
+new best PPL 25.23 (prev 25.24) -> saved ckpt_best.pt
+iter 55200: loss 2.5733, time 88121.21ms, mfu 2.02%
+iter 55225: loss 2.5739, time 410.42ms, mfu 2.06%
+iter 55250: loss 2.5749, time 393.97ms, mfu 2.10%
+iter 55275: loss 2.6336, time 553.35ms, mfu 2.07%
+iter 55300: loss 2.6119, time 400.75ms, mfu 2.11%
+iter 55325: loss 2.6057, time 401.79ms, mfu 2.14%
+iter 55350: loss 2.5387, time 398.56ms, mfu 2.17%
+iter 55375: loss 2.5678, time 399.89ms, mfu 2.20%
+step 55400: train loss 2.3939, val loss 3.2167, val ppl 24.95
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.21
+
+new best PPL 25.21 (prev 25.23) -> saved ckpt_best.pt
+iter 55400: loss 2.6037, time 87149.09ms, mfu 1.98%
+iter 55425: loss 2.6149, time 297.56ms, mfu 2.11%
+iter 55450: loss 2.6324, time 386.39ms, mfu 2.15%
+iter 55475: loss 2.4772, time 396.49ms, mfu 2.19%
+iter 55500: loss 2.5993, time 386.43ms, mfu 2.22%
+iter 55525: loss 2.5966, time 399.36ms, mfu 2.24%
+iter 55550: loss 2.6440, time 408.44ms, mfu 2.26%
+iter 55575: loss 2.5624, time 421.93ms, mfu 2.27%
+step 55600: train loss 2.3795, val loss 3.1965, val ppl 24.45
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.21
+
+eval PPL 25.21 (best so far 25.21)
+iter 55600: loss 2.5093, time 86340.16ms, mfu 2.04%
+iter 55625: loss 2.5539, time 400.39ms, mfu 2.08%
+iter 55650: loss 2.6788, time 415.86ms, mfu 2.11%
+iter 55675: loss 2.5733, time 381.34ms, mfu 2.15%
+iter 55700: loss 2.5517, time 402.79ms, mfu 2.18%
+iter 55725: loss 2.5766, time 401.81ms, mfu 2.21%
+iter 55750: loss 2.5474, time 407.14ms, mfu 2.23%
+iter 55775: loss 2.6403, time 404.81ms, mfu 2.25%
+step 55800: train loss 2.3759, val loss 3.2009, val ppl 24.56
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.21
+
+eval PPL 25.21 (best so far 25.21)
+iter 55800: loss 2.6421, time 86691.01ms, mfu 2.02%
+iter 55825: loss 2.5805, time 408.27ms, mfu 2.06%
+iter 55850: loss 2.6095, time 403.60ms, mfu 2.10%
+iter 55875: loss 2.6410, time 396.14ms, mfu 2.14%
+iter 55900: loss 2.5378, time 399.16ms, mfu 2.17%
+iter 55925: loss 2.5707, time 399.26ms, mfu 2.20%
+iter 55950: loss 2.5607, time 399.58ms, mfu 2.22%
+iter 55975: loss 2.5551, time 402.38ms, mfu 2.24%
+step 56000: train loss 2.3768, val loss 3.2120, val ppl 24.83
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.226
+ppl             : 25.18
+
+new best PPL 25.18 (prev 25.21) -> saved ckpt_best.pt
+iter 56000: loss 2.5869, time 86882.24ms, mfu 2.02%
+iter 56025: loss 2.5073, time 410.92ms, mfu 2.06%
+iter 56050: loss 2.6619, time 412.04ms, mfu 2.09%
+iter 56075: loss 2.5495, time 416.09ms, mfu 2.12%
+iter 56100: loss 2.7080, time 394.60ms, mfu 2.15%
+iter 56125: loss 2.5448, time 432.51ms, mfu 2.16%
+iter 56150: loss 2.5571, time 422.18ms, mfu 2.18%
+iter 56175: loss 2.5573, time 425.59ms, mfu 2.19%
+step 56200: train loss 2.3799, val loss 3.2060, val ppl 24.68
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.226
+ppl             : 25.18
+
+eval PPL 25.18 (best so far 25.18)
+iter 56200: loss 2.5426, time 95339.11ms, mfu 1.97%
+iter 56225: loss 2.6255, time 384.15ms, mfu 2.03%
+iter 56250: loss 2.5670, time 389.53ms, mfu 2.08%
+iter 56275: loss 2.5869, time 221.06ms, mfu 2.31%
+iter 56300: loss 2.5822, time 281.40ms, mfu 2.43%
+iter 56325: loss 2.5995, time 380.59ms, mfu 2.45%
+iter 56350: loss 2.6427, time 542.17ms, mfu 2.38%
+iter 56375: loss 2.5950, time 368.75ms, mfu 2.41%
+step 56400: train loss 2.3668, val loss 3.2014, val ppl 24.57
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.226
+ppl             : 25.18
+
+eval PPL 25.18 (best so far 25.18)
+iter 56400: loss 2.5775, time 84800.25ms, mfu 2.17%
+iter 56425: loss 2.6102, time 370.83ms, mfu 2.22%
+iter 56450: loss 2.6310, time 388.33ms, mfu 2.25%
+iter 56475: loss 2.5818, time 393.41ms, mfu 2.27%
+iter 56500: loss 2.5776, time 242.96ms, mfu 2.45%
+iter 56525: loss 2.6082, time 396.51ms, mfu 2.45%
+iter 56550: loss 2.6569, time 245.97ms, mfu 2.60%
+iter 56575: loss 2.5425, time 384.61ms, mfu 2.60%
+step 56600: train loss 2.3646, val loss 3.2166, val ppl 24.94
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 56600: loss 2.5221, time 80569.45ms, mfu 2.34%
+iter 56625: loss 2.5868, time 393.05ms, mfu 2.35%
+iter 56650: loss 2.5200, time 387.31ms, mfu 2.37%
+iter 56675: loss 2.5558, time 396.35ms, mfu 2.38%
+iter 56700: loss 2.5503, time 370.40ms, mfu 2.41%
+iter 56725: loss 2.5138, time 402.68ms, mfu 2.41%
+iter 56750: loss 2.5260, time 356.81ms, mfu 2.44%
+iter 56775: loss 2.5588, time 589.83ms, mfu 2.37%
+step 56800: train loss 2.3600, val loss 3.2136, val ppl 24.87
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 56800: loss 2.6092, time 243362.35ms, mfu 2.13%
+iter 56825: loss 2.6016, time 609.48ms, mfu 2.08%
+iter 56850: loss 2.6019, time 590.21ms, mfu 2.04%
+iter 56875: loss 2.6268, time 417.64ms, mfu 2.07%
+iter 56900: loss 2.6347, time 580.77ms, mfu 2.03%
+iter 56925: loss 2.5425, time 402.08ms, mfu 2.07%
+iter 56950: loss 2.5274, time 584.46ms, mfu 2.03%
+iter 56975: loss 2.5598, time 586.46ms, mfu 1.99%
+step 57000: train loss 2.3659, val loss 3.2091, val ppl 24.76
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.226
+ppl             : 25.18
+
+eval PPL 25.18 (best so far 25.18)
+iter 57000: loss 2.5667, time 184042.60ms, mfu 1.80%
+iter 57025: loss 2.5076, time 454.75ms, mfu 1.83%
+iter 57050: loss 2.6023, time 430.15ms, mfu 1.88%
+iter 57075: loss 2.5619, time 299.56ms, mfu 2.02%
+iter 57100: loss 2.5123, time 322.36ms, mfu 2.12%
+iter 57125: loss 2.6951, time 476.51ms, mfu 2.11%
+iter 57150: loss 2.5849, time 465.47ms, mfu 2.11%
+iter 57175: loss 2.5907, time 486.69ms, mfu 2.10%
+step 57200: train loss 2.3629, val loss 3.2126, val ppl 24.84
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.21
+
+eval PPL 25.21 (best so far 25.18)
+iter 57200: loss 2.5612, time 79283.41ms, mfu 1.89%
+iter 57225: loss 2.5129, time 461.13ms, mfu 1.92%
+iter 57250: loss 2.5371, time 414.77ms, mfu 1.96%
+iter 57275: loss 2.5326, time 189.97ms, mfu 2.28%
+iter 57300: loss 2.6260, time 188.03ms, mfu 2.57%
+iter 57325: loss 2.5613, time 260.30ms, mfu 2.69%
+iter 57350: loss 2.5580, time 190.63ms, mfu 2.94%
+iter 57375: loss 2.5659, time 195.33ms, mfu 3.15%
+step 57400: train loss 2.3575, val loss 3.2075, val ppl 24.72
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 57400: loss 2.5197, time 80914.43ms, mfu 2.83%
+iter 57425: loss 2.4944, time 214.06ms, mfu 3.01%
+iter 57450: loss 2.5221, time 468.12ms, mfu 2.92%
+iter 57475: loss 2.4674, time 368.13ms, mfu 2.89%
+iter 57500: loss 2.5267, time 375.42ms, mfu 2.86%
+iter 57525: loss 2.5991, time 489.09ms, mfu 2.78%
+iter 57550: loss 2.5287, time 399.13ms, mfu 2.74%
+iter 57575: loss 2.5543, time 351.20ms, mfu 2.75%
+step 57600: train loss 2.3530, val loss 3.2062, val ppl 24.69
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 57600: loss 2.5384, time 81436.12ms, mfu 2.47%
+iter 57625: loss 2.4701, time 320.53ms, mfu 2.53%
+iter 57650: loss 2.5667, time 356.67ms, mfu 2.55%
+iter 57675: loss 2.5765, time 215.30ms, mfu 2.75%
+iter 57700: loss 2.5679, time 369.35ms, mfu 2.74%
+iter 57725: loss 2.5874, time 353.70ms, mfu 2.75%
+iter 57750: loss 2.6181, time 352.05ms, mfu 2.75%
+iter 57775: loss 2.5877, time 346.45ms, mfu 2.76%
+step 57800: train loss 2.3455, val loss 3.2051, val ppl 24.66
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.226
+ppl             : 25.19
+
+eval PPL 25.19 (best so far 25.18)
+iter 57800: loss 2.5818, time 82746.48ms, mfu 2.48%
+iter 57825: loss 2.5156, time 310.78ms, mfu 2.55%
+iter 57850: loss 2.4581, time 301.88ms, mfu 2.62%
+iter 57875: loss 2.5631, time 326.58ms, mfu 2.66%
+iter 57900: loss 2.5058, time 452.83ms, mfu 2.61%
+iter 57925: loss 2.5706, time 172.34ms, mfu 2.92%
+iter 57950: loss 2.5466, time 553.96ms, mfu 2.80%
+iter 57975: loss 2.6048, time 255.49ms, mfu 2.91%
+step 58000: train loss 2.3473, val loss 3.2119, val ppl 24.83
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 58000: loss 2.5552, time 80835.13ms, mfu 2.62%
+iter 58025: loss 2.5433, time 315.87ms, mfu 2.66%
+iter 58050: loss 2.6203, time 456.00ms, mfu 2.61%
+iter 58075: loss 2.6021, time 194.52ms, mfu 2.86%
+iter 58100: loss 2.5461, time 248.07ms, mfu 2.96%
+iter 58125: loss 2.5209, time 41.73ms, mfu 5.02%
+iter 58150: loss 2.5563, time 457.17ms, mfu 4.73%
+iter 58175: loss 2.6633, time 444.14ms, mfu 4.48%
+step 58200: train loss 2.3437, val loss 3.2202, val ppl 25.03
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.19
+
+eval PPL 25.19 (best so far 25.18)
+iter 58200: loss 2.5864, time 83847.59ms, mfu 4.03%
+iter 58225: loss 2.5581, time 325.32ms, mfu 3.93%
+iter 58250: loss 2.4753, time 328.05ms, mfu 3.83%
+iter 58275: loss 2.5809, time 270.46ms, mfu 3.81%
+iter 58300: loss 2.5246, time 320.08ms, mfu 3.74%
+iter 58325: loss 2.5976, time 389.21ms, mfu 3.62%
+iter 58350: loss 2.5705, time 178.62ms, mfu 3.80%
+iter 58375: loss 2.5019, time 460.46ms, mfu 3.64%
+step 58400: train loss 2.3357, val loss 3.2078, val ppl 24.73
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.227
+ppl             : 25.20
+
+eval PPL 25.20 (best so far 25.18)
+iter 58400: loss 2.5746, time 86401.10ms, mfu 3.27%
+iter 58425: loss 2.6108, time 313.00ms, mfu 3.26%
+iter 58450: loss 2.5379, time 190.00ms, mfu 3.45%
+iter 58475: loss 2.4965, time 461.42ms, mfu 3.32%
+iter 58500: loss 2.5476, time 395.51ms, mfu 3.23%
+iter 58525: loss 2.5849, time 183.26ms, mfu 3.44%
+iter 58550: loss 2.5564, time 397.30ms, mfu 3.35%
+iter 58575: loss 2.5490, time 417.15ms, mfu 3.25%
+step 58600: train loss 2.3376, val loss 3.2145, val ppl 24.89
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.229
+ppl             : 25.25
+
+eval PPL 25.25 (best so far 25.18)
+iter 58600: loss 2.5457, time 79937.51ms, mfu 2.92%
+iter 58625: loss 2.5823, time 183.91ms, mfu 3.16%
+iter 58650: loss 2.5866, time 191.75ms, mfu 3.36%
+iter 58675: loss 2.5190, time 176.25ms, mfu 3.58%
+iter 58700: loss 2.5394, time 329.78ms, mfu 3.52%
+iter 58725: loss 2.6126, time 327.60ms, mfu 3.46%
+iter 58750: loss 2.6474, time 234.00ms, mfu 3.54%
+iter 58775: loss 2.5678, time 314.46ms, mfu 3.50%
+step 58800: train loss 2.3289, val loss 3.2096, val ppl 24.77
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.228
+ppl             : 25.23
+
+eval PPL 25.23 (best so far 25.18)
+iter 58800: loss 2.5354, time 81154.66ms, mfu 3.15%
+iter 58825: loss 2.5334, time 192.76ms, mfu 3.34%
+iter 58850: loss 2.4831, time 188.86ms, mfu 3.53%
+iter 58875: loss 2.5471, time 201.19ms, mfu 3.66%
+iter 58900: loss 2.5328, time 321.58ms, mfu 3.60%
+iter 58925: loss 2.5580, time 461.50ms, mfu 3.45%
+iter 58950: loss 2.4794, time 557.99ms, mfu 3.28%
+iter 58975: loss 2.4929, time 452.76ms, mfu 3.17%
+step 59000: train loss 2.3334, val loss 3.2106, val ppl 24.79
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.228
+ppl             : 25.23
+
+eval PPL 25.23 (best so far 25.18)
+iter 59000: loss 2.5356, time 80560.12ms, mfu 2.85%
+iter 59025: loss 2.5969, time 346.99ms, mfu 2.85%
+iter 59050: loss 2.5224, time 594.71ms, mfu 2.73%
+iter 59075: loss 2.4967, time 414.69ms, mfu 2.69%
+iter 59100: loss 2.5004, time 304.34ms, mfu 2.75%
+iter 59125: loss 2.5063, time 450.45ms, mfu 2.69%
+iter 59150: loss 2.5377, time 443.62ms, mfu 2.64%
+iter 59175: loss 2.5449, time 417.66ms, mfu 2.61%
+step 59200: train loss 2.3233, val loss 3.2058, val ppl 24.68
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.229
+ppl             : 25.26
+
+eval PPL 25.26 (best so far 25.18)
+iter 59200: loss 2.4845, time 80394.57ms, mfu 2.35%
+iter 59225: loss 2.6255, time 319.49ms, mfu 2.42%
+iter 59250: loss 2.5885, time 328.14ms, mfu 2.48%
+iter 59275: loss 2.5750, time 303.85ms, mfu 2.55%
+iter 59300: loss 2.5054, time 173.45ms, mfu 2.86%
+iter 59325: loss 2.4914, time 170.15ms, mfu 3.15%
+iter 59350: loss 2.5643, time 376.70ms, mfu 3.10%
+iter 59375: loss 2.5015, time 178.96ms, mfu 3.34%
+step 59400: train loss 2.3290, val loss 3.2221, val ppl 25.08
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.229
+ppl             : 25.25
+
+eval PPL 25.25 (best so far 25.18)
+iter 59400: loss 2.5291, time 81500.51ms, mfu 3.00%
+iter 59425: loss 2.5314, time 312.23ms, mfu 3.02%
+iter 59450: loss 2.5909, time 203.70ms, mfu 3.20%
+iter 59475: loss 2.5014, time 457.92ms, mfu 3.09%
+iter 59500: loss 2.5662, time 339.49ms, mfu 3.07%
+iter 59525: loss 2.5034, time 327.30ms, mfu 3.06%
+iter 59550: loss 2.5364, time 343.93ms, mfu 3.04%
+iter 59575: loss 2.5473, time 415.00ms, mfu 2.97%
+step 59600: train loss 2.3188, val loss 3.2116, val ppl 24.82
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.229
+ppl             : 25.26
+
+eval PPL 25.26 (best so far 25.18)
+iter 59600: loss 2.5680, time 79751.22ms, mfu 2.68%
+iter 59625: loss 2.4485, time 442.92ms, mfu 2.63%
+iter 59650: loss 2.5868, time 633.09ms, mfu 2.52%
+iter 59675: loss 2.5336, time 551.99ms, mfu 2.45%
+iter 59700: loss 2.5692, time 376.95ms, mfu 2.46%
+iter 59725: loss 2.5036, time 472.34ms, mfu 2.42%
+iter 59750: loss 2.6161, time 321.13ms, mfu 2.49%
+iter 59775: loss 2.5613, time 279.26ms, mfu 2.59%
+step 59800: train loss 2.3125, val loss 3.2024, val ppl 24.59
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.230
+ppl             : 25.28
+
+eval PPL 25.28 (best so far 25.18)
+iter 59800: loss 2.5102, time 80572.31ms, mfu 2.33%
+iter 59825: loss 2.5833, time 234.72ms, mfu 2.52%
+iter 59850: loss 2.5654, time 412.18ms, mfu 2.50%
+iter 59875: loss 2.4773, time 332.54ms, mfu 2.55%
+iter 59900: loss 2.5997, time 273.80ms, mfu 2.65%
+iter 59925: loss 2.5769, time 396.13ms, mfu 2.63%
+iter 59950: loss 2.5711, time 302.30ms, mfu 2.69%
+iter 59975: loss 2.5252, time 314.87ms, mfu 2.73%
+step 60000: train loss 2.3228, val loss 3.2038, val ppl 24.63
+saving checkpoint to out-rocstories-clean
+running eval: python eval.py --init_from=resume --out_dir=out-rocstories-clean --input_file=data/rocstories/test.txt --device=cuda
+Overriding: init_from = resume
+Overriding: out_dir = out-rocstories-clean
+Overriding: input_file = data/rocstories/test.txt
+Overriding: device = cuda
+number of parameters: 29.92M
+No meta.pkl found, assuming GPT-2 encodings...
+Loaded 19633 paragraphs from data/rocstories/test.txt (format=txt)
+[preview 0] David had achieved his lifelong goal. He had just become a pilot! He had learned how to fly many kinds of planes. He dec...
+[preview 1] Dave went to Mammoth Mountain to go skiing. He put on his boots, skis and goggles. With great excitement, he climbed int...
+[preview 2] Harriet was reading a great book. It was a mystery about a missing person. She read the entire thing in one evening. Whe...
+----- Evaluation Results -----
+model           : resume
+paragraphs_used : 19633
+paragraphs_skip : 0
+pred_tokens     : 988345
+avg_loss        : 3.230
+ppl             : 25.29
+
+eval PPL 25.29 (best so far 25.18)
+iter 60000: loss 2.5698, time 80018.09ms, mfu 2.46%
